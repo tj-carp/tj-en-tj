@@ -1,4 +1,25 @@
-# tj-en-tj
-Repository voor RailNL project
+# RailNL
+This is the repository for our RailNL project, explained here:
 
-Hallo T en J
+## Get started!
+### Requirements
+* **matplotlib ?**
+
+### How to use
+?? create a main.py
+
+### Structure
+- **/code**: all project code
+  - **/code/algorithms**: algorithm codes
+  - **/code/classes**: classes created for this case
+  - **/code/visualisation**: code for creating a visualisation of the case
+- **/data**: the data files we use for input
+
+
+## Versioning
+* **Python 3.??**
+
+## Authors
+* **Jaco van der Meij**
+* **Tom Zeeuwe**
+* **TJ Leeuwerik**
