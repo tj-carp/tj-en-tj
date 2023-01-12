@@ -13,8 +13,8 @@ y2 = df_verbindingen.iloc[:, 2]
 xy1 = pd.concat([y1, x1], axis=1)
 xy2 = pd.concat([y2, x2], axis=1)
 
-
 # debugging 
+
 # print("DF: ")
 # print(df.head)
 
@@ -30,7 +30,6 @@ xy2 = pd.concat([y2, x2], axis=1)
 # print(xy1)
 # print("xy 2: ")
 # print(xy2)
-
 
 plt.scatter(x=df['x'], y=df['y'], s=10, c='yellow', edgecolors='blue', linewidths=1)
 [plt.text( x=row['x'] + 0.005, y=row['y'], s=row['station'], fontsize=7) for k, row in df.iterrows()]
