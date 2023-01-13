@@ -3,7 +3,7 @@ from .station import Station
 
 df = read_csv("ConnectiesHolland.csv")
 
-class Traject:
+class Trajectory:
     
     def __init__(self, course: list):
         self.course = course
