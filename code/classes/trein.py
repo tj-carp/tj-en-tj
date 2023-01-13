@@ -1,4 +1,5 @@
 from pandas import read_csv, unique
+from .station import Station
 
 df = read_csv("ConnectiesHolland.csv")
 
@@ -15,15 +16,7 @@ class Connection:
         self._station2 = station2
         self._distance = distance
 
-class Station:
-    
-    def __init__(self, name: str):
-        self._name = name
-        self._adjacents = {i.station1 : i.distance for i in df.itertuples() if i.station2 == name}
-        for i in df.itertuples():
-            if i.station1 == name:
-                self._adjacents[i.station2] = i.distance
-            
+
 # print(df)
 
 connections = tuple(Connection(Station(x.station1), Station(x.station2), x.distance) for x in df.itertuples())
