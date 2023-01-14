@@ -11,6 +11,7 @@ if __name__ == "__main__":
 
     for station in test_stations.stations:
         print (test_stations.stations[station])
+        #print(test_stations.stations[station].get_connection())
 
 
 

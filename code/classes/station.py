@@ -10,10 +10,11 @@ class Station:
     def add_connection(self, station, distance):
         self._connections.update({station : distance})
 
-    #def get_station(self, )
+    def get_connection(self):
+        return self._connections    
 
     def __repr__(self):
         """
         Make sure that the object is printed properly if it is in a list/dict.
         """
-        return f"{self.name, self.coord_y, self.coord_x}"
+        return f"{self.name, self.coord_y, self.coord_x, self._connections}"
