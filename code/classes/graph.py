@@ -31,7 +31,9 @@ class Graph():
             reader = csv.DictReader(in_file)
 
             for row in reader:
-                row['station1'] = stations['station']
+                if row['station1'] = stations['station']
+
+
                 # connections = {}
 
                 # for connection in row['connections'].split(','):

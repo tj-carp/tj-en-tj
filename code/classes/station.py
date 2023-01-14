@@ -7,8 +7,8 @@ class Station:
         self.connections = {}
         
     
-    def is_neighbor(self, other: Station) -> bool:
-        return self._id in other._connections and other._id in self._connections
+    def add_connection(self, station):
+        
 
     def __repr__(self) -> str:
         pass
