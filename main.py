@@ -29,6 +29,11 @@ stations = tuple(set(stations))
     
 #     while True:
 
+# Station = node
+# Trajectory = graph
+
+
+
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
 # en dan telkens een station met de meeste minuten eraan koppelen. Dit zelfde doe je bij het andere eindpunt.
