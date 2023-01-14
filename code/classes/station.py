@@ -1,16 +1,14 @@
 class Station:
     
-    def __init__(self, name: str, uid: int):
-        self._name = name
-        self._id = uid
-        self._adjacents = {}#{i.station1 : i.distance for i in df.itertuples() if i.station2 == name}
+    def __init__(self, name, coord_y, coord_x):
+        self.name = name
+        self.coord_y = coord_y
+        self.coord_x = coord_x
+        self.connections = {}
         
-        # for i in df.itertuples():
-        #     if i.station1 == name:
-        #         self._adjacents[i.station2] = i.distance
     
     def is_neighbor(self, other: Station) -> bool:
-        return self._id in other._adjacents and other._id in self._adjacents
+        return self._id in other._connections and other._id in self._connections
 
     def __repr__(self) -> str:
         pass
