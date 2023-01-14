@@ -33,11 +33,14 @@ if __name__ == "__main__":
 # # for i in terminals:
     
 # #     while True:
+<<<<<<< HEAD
 
 # Station = node
 # Trajectory = graph
 
 
+=======
+>>>>>>> 88dc184e58c4be257262c009f6e01e591835ab22
 
 
 # # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
