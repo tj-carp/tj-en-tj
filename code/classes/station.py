@@ -13,6 +13,6 @@ class Station:
 
     def __repr__(self):
         """
-        Make sure that the object is printed properly if it is in a list/dict.
+        make sure that the object is printed properly if it is in a list/dict
         """
         return f"{self.name, self.coord_y, self.coord_x, self.connections}"

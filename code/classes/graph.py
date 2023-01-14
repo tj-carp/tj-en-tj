@@ -36,18 +36,3 @@ class Graph():
                         self.stations[station].add_connection(row['station2'], row['distance'])
                     if row['station2'] == station:
                         self.stations[station].add_connection(row['station1'], row['distance'])
-                        
-
-                # connections = {}
-
-                # for connection in row['connections'].split(','):
-                #     # only add if the result is not an empty string
-                #     if connection.strip('[] ') != '':
-                #         connections.append(connection.strip('[] '))
-
-                # station_id = row['id']
-
-                # # add the connection to the correct node
-                # for connection in connections:
-                #     connection = self.stations[connection]
-                #     self.stations[station_id].add_connection(connection)
