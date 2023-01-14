@@ -4,9 +4,11 @@ class Station:
         self.name = name
         self.coord_y = coord_y
         self.coord_x = coord_x
-        self.connections = {}
+        self._connections = {}
         
     
-    def add_connection(self, station):
-        pass
+    def add_connection(self, station, distance):
+        self._connections.update({station : distance})
+
+    #def get_station(self, )
 

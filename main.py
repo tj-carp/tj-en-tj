@@ -9,7 +9,8 @@ if __name__ == "__main__":
     # test if stations read
     test_stations = graph.Graph(stations_file, connections_file)
 
-    print(test_stations.stations)
+    #for station in test_stations.stations:
+    print (test_stations.stations.keys())
 
 
 
