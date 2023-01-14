@@ -8,7 +8,5 @@ class Station:
         
     
     def add_connection(self, station):
-        
-
-    def __repr__(self) -> str:
         pass
+

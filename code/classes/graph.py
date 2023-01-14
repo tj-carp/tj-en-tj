@@ -6,7 +6,7 @@ from .station import Station
 class Graph():
     def __init__(self, stations_file, connections_file):
         self.stations = self.load_stations(stations_file)
-        self.load_connections(connections_file)
+        #self.load_connections(connections_file)
 
         
     def load_stations(self, stations_file):
@@ -23,15 +23,15 @@ class Graph():
         return stations
 
 
-    def load_connections(self, connections_file):
-        """
-        load all the connections into the loaded stations
-        """
-        with open(connections_file, 'r') as in_file:
-            reader = csv.DictReader(in_file)
+    # def load_connections(self, connections_file):
+    #     """
+    #     load all the connections into the loaded stations
+    #     """
+    #     with open(connections_file, 'r') as in_file:
+    #         reader = csv.DictReader(in_file)
 
-            for row in reader:
-                if row['station1'] = stations['station']
+    #         for row in reader:
+    #             if row['station1'] = stations['station']
 
 
                 # connections = {}

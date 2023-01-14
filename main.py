@@ -1,10 +1,15 @@
-from pandas import read_csv, unique
-from code.classes import station
+from code.classes import graph
 
 if __name__ == "__main__":
 
-    map_name = "Holland"
-    source_file = f"data/Stations{map_name}.csv"
+    map_name = "holland"
+    stations_file = f"data/stations_{map_name}.csv"
+    connections_file = f"data/connections_text.csv"
+
+    # test if stations read
+    test_stations = graph.Graph(stations_file, connections_file)
+
+    print(test_stations.stations)
 
 
 
