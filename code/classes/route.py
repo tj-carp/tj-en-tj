@@ -1,9 +1,9 @@
 class Route:
     
-    def __init__(self, stations, start_station):
+    def __init__(self, stations):
         self.stations = stations
-        self.route = [start_station]
-        self.current_station = start_station
+        self.route = []
+        self.current_station = 0
         self.length = 0
         
 
@@ -11,6 +11,12 @@ class Route:
         """
         add a station to the route
         """
+
+        if not self.route:
+            self.route.append(station)
+            self.current_station = station
+            return
+
         #check if station in connections
         if station.name not in self.current_station.connections.keys():
             print("no that doesnt go there :(")
