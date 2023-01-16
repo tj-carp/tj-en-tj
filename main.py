@@ -8,21 +8,20 @@ if __name__ == "__main__":
     stations_file = f"data/stations_{map_name}.csv"
     connections_file = f"data/connections_text.csv"
 
-    # test if stations read
+    # read stations
     stations = Graph(stations_file, connections_file).stations
 
-    #print(stations)
-
-    start_station = stations['Alkmaar']
+    # create empty route
     test_route = Route(stations)
 
+    # create random route of at least 20 minutes
     random_station = random.choice(list(stations.keys()))
-
-    while test_route.length < 120:            
+    
+    while test_route.length < 20:            
         test_route.add_station(stations[random_station])
         random_station = random.choice(list(stations.keys()))
     
-    
+
     #for station in stations:
         #print (station)
         #print (stations[station].connections)
