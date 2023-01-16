@@ -10,8 +10,19 @@ class Route:
         """
         add a station to the route
         """
+        if not self.route:
+            self.route.append(station)
+            self.current_station = station
         
-        self.route.append(station)
+        elif station in self.stations:
+            print(f"{self.current_station}")
+        
+
+    def __repr__(self):
+        """
+        make sure that the object is printed properly if it is in a list/dict
+        """
+        return f"{self.route}" 
 
     
 

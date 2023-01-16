@@ -8,14 +8,15 @@ if __name__ == "__main__":
     connections_file = f"data/connections_text.csv"
 
     # test if stations read
-    stations = Graph(stations_file, connections_file)
+    stations = Graph(stations_file, connections_file).stations
 
     #test_route = Route(stations)
-    #test_route.add_station(stations.stations[1])
-    print(stations.stations['Alkmaar'])
+    #test_route.add_station(stations['Alkmaar'])
+    #print(test_route)
+    #test_route.add_station(stations['Castricum'])
 
-    #for station in stations.stations:
-        #print (stations.stations[station])
+    for station in stations:
+        print (station, stations[station])
         #print (stations.stations[station].connections)
 
 
