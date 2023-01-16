@@ -1,21 +1,26 @@
 class Route:
     
-    def __init__(self, stations):
-        self.route = []
+    def __init__(self, stations, start_station):
         self.stations = stations
+        self.route = [start_station]
+        self.current_station = start_station
         self.length = 0
-
+        
 
     def add_station(self, station):
         """
         add a station to the route
         """
-        if not self.route:
-            self.route.append(station)
-            self.current_station = station
+        #if not self.route:
+            #self.route.append(station)
+            #self.current_station = station
         
-        elif station in self.stations:
-            print(f"{self.current_station}")
+        # elif station in self.stations:
+        #     print(f"{self.current_station}")
+        #print(self.stations[self.current_station].connections.keys())
+        print(self.route)
+        #if station in self.stations[self.current_station].connections.keys():
+            #print(self.stations[self.current_station].connections.keys())
         
 
     def __repr__(self):

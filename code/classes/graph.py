@@ -18,7 +18,7 @@ class Graph():
             reader = csv.DictReader(in_file)
 
             for row in reader:
-                stations[row['station']] = Station(row['y'], row['x'])
+                stations[row['station']] = Station(row['station'], row['y'], row['x'])
 
         return stations
 

@@ -1,6 +1,7 @@
 class Station:
     
-    def __init__(self, coord_y, coord_x):
+    def __init__(self, name, coord_y, coord_x):
+        self.name = name
         self.coords = (coord_y, coord_x)
         self.connections = {}
         
@@ -13,4 +14,4 @@ class Station:
         """
         make sure that the object is printed properly if it is in a list/dict
         """
-        return f"{self.coords, self.connections}"
+        return f"{self.name, self.coords, self.connections}"

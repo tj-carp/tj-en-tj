@@ -10,14 +10,17 @@ if __name__ == "__main__":
     # test if stations read
     stations = Graph(stations_file, connections_file).stations
 
-    #test_route = Route(stations)
+    #print(stations)
+
+    #start_station = stations['Alkmaar']
+    #test_route = Route(stations, start_station)
     #test_route.add_station(stations['Alkmaar'])
     #print(test_route)
     #test_route.add_station(stations['Castricum'])
 
     for station in stations:
-        print (station, stations[station])
-        #print (stations.stations[station].connections)
+        print (station)
+        #print (stations[station].connections)
 
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
