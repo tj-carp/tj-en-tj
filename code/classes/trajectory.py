@@ -1,8 +1,12 @@
 class Trajectory:
     
-    def __init__(self):
+    def __init__(self, stations):
+        self.stations = stations
         self.trajectory = []
         self.length = 0
+
+    
+
 
 
 
