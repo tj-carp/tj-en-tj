@@ -8,13 +8,13 @@ if __name__ == "__main__":
     connections_file = f"data/connections_text.csv"
 
     # test if stations read
-    test_stations = Graph(stations_file, connections_file)
+    stations = Graph(stations_file, connections_file)
 
-    test_trajectory = Trajectory(test_stations)
+    test_trajectory = Trajectory(stations)
 
-    for station in test_stations.stations:
-        print (test_stations.stations[station])
-        #print (test_stations.stations[station].connections.values())
+    for station in stations.stations:
+        print (stations.stations[station])
+        #print (stations.stations[station].connections.values())
 
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
