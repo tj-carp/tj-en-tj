@@ -33,6 +33,6 @@ class Graph():
             for row in reader:
                 for station in self.stations:
                     if row['station1'] == station:
-                        self.stations[station].add_connection(row['station2'], row['distance'])
+                        self.stations[station].add_connection(row['station2'], int(row['distance']))
                     if row['station2'] == station:
-                        self.stations[station].add_connection(row['station1'], row['distance'])
+                        self.stations[station].add_connection(row['station1'], int(row['distance']))

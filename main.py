@@ -10,7 +10,8 @@ if __name__ == "__main__":
     test_stations = graph.Graph(stations_file, connections_file)
 
     for station in test_stations.stations:
-        print (test_stations.stations[station])
+        #print (test_stations.stations[station])
+        print (test_stations.stations[station].connections.values())
 
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
