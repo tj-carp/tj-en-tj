@@ -19,18 +19,18 @@ class Route:
 
         # check if station in connections
         if station.name not in self.current_station.connections.keys():
-            print("no that doesnt go there :(")
+            # print("no that doesnt go there :(")
             return
 
         if station in self.route:
-            print("you were just there!")
+            # print("you were just there!")
             return
 
         # add station and make it the current station in the route
-        print("congration you did it :)")
+        # print("congration you did it :)")
         self.route.append(station)
         self.length += self.current_station.connections[station.name]
-        print(self.length)
+        # print(self.length)
         self.current_station = station
         
 
