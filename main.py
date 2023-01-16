@@ -1,4 +1,5 @@
-from code.classes import graph, trajectory
+from code.classes.graph import Graph
+from code.classes.trajectory import Trajectory
 
 if __name__ == "__main__":
 
@@ -7,13 +8,13 @@ if __name__ == "__main__":
     connections_file = f"data/connections_text.csv"
 
     # test if stations read
-    test_stations = graph.Graph(stations_file, connections_file)
+    test_stations = Graph(stations_file, connections_file)
 
-    test_trajectory = trajectory.Trajectory(stations)
+    test_trajectory = Trajectory(test_stations)
 
     for station in test_stations.stations:
-        #print (test_stations.stations[station])
-        print (test_stations.stations[station].connections.values())
+        print (test_stations.stations[station])
+        #print (test_stations.stations[station].connections.values())
 
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
