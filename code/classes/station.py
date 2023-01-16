@@ -3,11 +3,11 @@ class Station:
     def __init__(self, name, coord_y, coord_x):
         self.name = name
         self.coords = (coord_y, coord_x)
-        self.connections = {}
+        self.connections = []
         
     
     def add_connection(self, station, distance):
-        self.connections.update({station : distance})
+        self.connections.append({station : distance})
 
 
     def __repr__(self):
