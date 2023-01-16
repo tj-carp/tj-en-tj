@@ -1,5 +1,5 @@
 from code.classes.graph import Graph
-from code.classes.trajectory import Trajectory
+from code.classes.route import Route
 
 if __name__ == "__main__":
 
@@ -10,11 +10,11 @@ if __name__ == "__main__":
     # test if stations read
     stations = Graph(stations_file, connections_file)
 
-    test_trajectory = Trajectory(stations)
+    test_route = Route(stations)
 
     for station in stations.stations:
-        print (stations.stations[station])
-        #print (stations.stations[station].connections.values())
+        #print (stations.stations[station])
+        print (stations.stations[station].connections)
 
 
 # We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
