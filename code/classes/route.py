@@ -11,17 +11,17 @@ class Route:
         """
         add a station to the route
         """
-        #if not self.route:
-            #self.route.append(station)
-            #self.current_station = station
-        
-        # elif station in self.stations:
-        #     print(f"{self.current_station}")
-        #print(self.stations[self.current_station].connections.keys())
-        #print(station.connections.keys())
-        #print(self.current_station.connections)
-        if station.name in self.current_station.connections.keys():
-            print("YES")
+        #check if station in connections
+        if station.name not in self.current_station.connections.keys():
+            print("no that doesnt go there :(")
+            return
+
+        #add station and make it the current station in the route
+        print("congration you did :)")
+        self.route.append(station)
+        self.length += self.current_station.connections[station.name]
+        print(self.length)
+        self.current_station = station
         
 
     def __repr__(self):

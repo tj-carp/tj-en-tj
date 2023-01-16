@@ -19,6 +19,8 @@ if __name__ == "__main__":
     #print(stations['Castricum'])
     test_route.add_station(stations['Castricum'])
 
+    test_route.add_station(stations['Beverwijk'])
+
     #for station in stations:
         #print (station)
         #print (stations[station].connections)
