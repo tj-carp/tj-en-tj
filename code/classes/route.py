@@ -27,16 +27,12 @@ class Route:
             return
 
         # add station and make it the current station in the route
-        print("congration you did :)")
+        print("congration you did it :)")
         self.route.append(station)
         self.length += self.current_station.connections[station.name]
         print(self.length)
         self.current_station = station
         
-    
-    def create_route(self):
-        pass
-
 
     def __repr__(self):
         """

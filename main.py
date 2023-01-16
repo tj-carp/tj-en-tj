@@ -11,8 +11,13 @@ if __name__ == "__main__":
     # read stations
     stations = Graph(stations_file, connections_file).stations
 
+    # check if stations loaded correctly
+    for station in stations:
+        print (stations[station])
+
     # create empty route
     test_route = Route(stations)
+
 
     # create random route of at least 20 minutes
     random_station = random.choice(list(stations.keys()))
@@ -20,8 +25,11 @@ if __name__ == "__main__":
     while test_route.length < 20:            
         test_route.add_station(stations[random_station])
         random_station = random.choice(list(stations.keys()))
-    
 
-    #for station in stations:
-        #print (station)
-        #print (stations[station].connections)
+
+    # create random route of at least 4 stations
+    random_station = random.choice(list(stations.keys()))
+    
+    while len(test_route.route) < 4:            
+        test_route.add_station(stations[random_station])
+        random_station = random.choice(list(stations.keys()))
