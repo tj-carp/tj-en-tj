@@ -1,5 +1,6 @@
 from code.classes.graph import Graph
 from code.classes.route import Route
+import random
 
 if __name__ == "__main__":
 
@@ -15,26 +16,13 @@ if __name__ == "__main__":
     start_station = stations['Alkmaar']
     test_route = Route(stations)
 
-    #test_route.create_route()
+    random_station = random.choice(list(stations.keys()))
 
-    test_route.add_station(stations['Alkmaar'])
+    while test_route.length < 120:            
+        test_route.add_station(stations[random_station])
+        random_station = random.choice(list(stations.keys()))
     
-    #print(test_route)
-    #print(stations['Castricum'])
-    test_route.add_station(stations['Castricum'])
-    #test_route.add_station(stations['Alkmaar'])
-    test_route.add_station(stations['Beverwijk'])
-    print(test_route)
-
+    
     #for station in stations:
         #print (station)
         #print (stations[station].connections)
-
-
-# We kunnen beginnen met een algoritme waarbij we bij een van de eindstations beginnen
-# en dan telkens een station met de meeste minuten eraan koppelen. Dit zelfde doe je bij het andere eindpunt.
-# Vevolgens probeer je van de tussengelegen stations zo lang mogelijke trajecten te maken.
-# 
-
-# Bovenstaande kun je ook doen door tegen een bepaalde kans stations aan je trajecten toe te voegen
-# zodat er voldoende randomisation plaatsvindt om tot verschillende oplossingen te komen

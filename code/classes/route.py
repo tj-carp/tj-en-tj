@@ -11,13 +11,13 @@ class Route:
         """
         add a station to the route
         """
-
+        # check if station is first in route
         if not self.route:
             self.route.append(station)
             self.current_station = station
             return
 
-        #check if station in connections
+        # check if station in connections
         if station.name not in self.current_station.connections.keys():
             print("no that doesnt go there :(")
             return
@@ -26,7 +26,7 @@ class Route:
             print("you were just there!")
             return
 
-        #add station and make it the current station in the route
+        # add station and make it the current station in the route
         print("congration you did :)")
         self.route.append(station)
         self.length += self.current_station.connections[station.name]
