@@ -16,6 +16,10 @@ class Route:
             print("no that doesnt go there :(")
             return
 
+        if station in self.route:
+            print("you were just there!")
+            return
+
         #add station and make it the current station in the route
         print("congration you did :)")
         self.route.append(station)
@@ -23,6 +27,10 @@ class Route:
         print(self.length)
         self.current_station = station
         
+    
+    def create_route(self):
+        pass
+
 
     def __repr__(self):
         """

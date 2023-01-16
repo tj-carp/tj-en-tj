@@ -14,12 +14,14 @@ if __name__ == "__main__":
 
     start_station = stations['Alkmaar']
     test_route = Route(stations, start_station)
+    #test_route.create_route()
+
     #test_route.add_station(stations['Alkmaar'])
     #print(test_route)
     #print(stations['Castricum'])
-    test_route.add_station(stations['Castricum'])
-
-    test_route.add_station(stations['Beverwijk'])
+    #test_route.add_station(stations['Castricum'])
+    #test_route.add_station(stations['Alkmaar'])
+    #test_route.add_station(stations['Beverwijk'])
 
     #for station in stations:
         #print (station)
