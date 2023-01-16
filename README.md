@@ -6,7 +6,10 @@ This is the repository for our RailNL project, explained here:
 * **matplotlib ?**
 
 ### How to use
-?? create a main.py
+Run an example by calling:
+```
+python3 main.py
+```
 
 ### Structure
 - **/code**: all project code
