@@ -18,9 +18,10 @@ class Route:
         # elif station in self.stations:
         #     print(f"{self.current_station}")
         #print(self.stations[self.current_station].connections.keys())
-        print(self.route)
-        #if station in self.stations[self.current_station].connections.keys():
-            #print(self.stations[self.current_station].connections.keys())
+        #print(station.connections.keys())
+        #print(self.current_station.connections)
+        if station.name in self.current_station.connections.keys():
+            print("YES")
         
 
     def __repr__(self):

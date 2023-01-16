@@ -10,13 +10,14 @@ if __name__ == "__main__":
     # test if stations read
     stations = Graph(stations_file, connections_file).stations
 
-    print(stations)
+    #print(stations)
 
-    #start_station = stations['Alkmaar']
-    #test_route = Route(stations, start_station)
+    start_station = stations['Alkmaar']
+    test_route = Route(stations, start_station)
     #test_route.add_station(stations['Alkmaar'])
     #print(test_route)
-    #test_route.add_station(stations['Castricum'])
+    #print(stations['Castricum'])
+    test_route.add_station(stations['Castricum'])
 
     #for station in stations:
         #print (station)
