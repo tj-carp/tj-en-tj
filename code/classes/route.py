@@ -1,14 +1,17 @@
 class Route:
     
     def __init__(self, stations):
-        self.route = load_route(stations)
+        self.route = []
+        self.stations = stations
         self.length = 0
 
 
-    def load_route():
-        route = []
-    
-
+    def add_station(self, station):
+        """
+        add a station to the route
+        """
+        
+        self.route.append(station)
 
     
 
