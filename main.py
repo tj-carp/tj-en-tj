@@ -18,14 +18,12 @@ if __name__ == "__main__":
     # create empty route
     test_route = Route(stations)
 
-
     # create random route of at least 20 minutes
     random_station = random.choice(list(stations.keys()))
     
     while test_route.length < 20:            
         test_route.add_station(stations[random_station])
         random_station = random.choice(list(stations.keys()))
-
 
     # create random route of at least 4 stations
     random_station = random.choice(list(stations.keys()))
