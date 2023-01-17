@@ -14,17 +14,15 @@ class Route:
         # check if station is first in route
         if not self.route:
             self.route.append(station)
+            station.set_visited()
             self.current_station = station
             return
-
         # check if station in connections
         if station.name not in self.current_station.connections.keys():
             return
-
         #check if station already in route
         if station in self.route:
             return
-        
         # check if station will not make route exceed length
         if self.length + self.current_station.connections[station.name] > 120:
             return
@@ -32,6 +30,7 @@ class Route:
         # add station and make it the current station in the route
         self.route.append(station)
         self.length += self.current_station.connections[station.name]
+        station.set_visited()
         self.current_station = station
 
     
