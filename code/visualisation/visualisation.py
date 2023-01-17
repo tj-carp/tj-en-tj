@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # import csv data
-df = pd.read_csv("stations_holland.csv")
+df = pd.read_csv("../../data/stations_holland.csv")
 
 # hardcode alle verbindingen
 alkmaar_x = [52.64472198, 52.63777924, 52.95527649]
