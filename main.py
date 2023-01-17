@@ -25,11 +25,13 @@ if __name__ == "__main__":
         test_route.add_station(stations[random_station])
         random_station = random.choice(list(stations.keys()))
 
-    print(f"Here's a random route of at least 20 minutes: {test_route.route}")
+    print(f"Here's a random route of at least 20 minutes: {test_route.get_route()}")
 
-    # # create random route of at least 4 stations
+    # # create random route of 5 stations
     # random_station = random.choice(list(stations.keys()))
     
-    # while len(test_route.route) < 4:            
+    # while len(test_route.route) < 5:            
     #     test_route.add_station(stations[random_station])
     #     random_station = random.choice(list(stations.keys()))
+    
+    # print(f"Here's a random route of 5 stations: {test_route.get_route()}")
