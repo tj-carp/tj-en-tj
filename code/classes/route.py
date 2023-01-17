@@ -19,19 +19,31 @@ class Route:
 
         # check if station in connections
         if station.name not in self.current_station.connections.keys():
-            # print("no that doesnt go there :(")
             return
 
+        #check if station already in route
         if station in self.route:
-            # print("you were just there!")
+            return
+        
+        # check if station will not make route exceed length
+        if self.length + self.current_station.connections[station.name] > 120:
             return
 
         # add station and make it the current station in the route
-        # print("congration you did it :)")
         self.route.append(station)
         self.length += self.current_station.connections[station.name]
-        # print(self.length)
         self.current_station = station
+
+    
+    def get_route(self):
+        route_names = ''
+        for station in self.route:
+            if station == self.route[0]:
+                route_names += f"{station.name}"
+            else:
+                route_names += f" - {station.name}"
+        
+        return f"{route_names}"
         
 
     def __repr__(self):
