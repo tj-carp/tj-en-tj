@@ -25,11 +25,14 @@ if __name__ == "__main__":
     df.columns = ['station', 'latitude', 'longitude', 'connections']
     print(df)
 
-    plt.scatter(df['latitude'], df['longitude'])
+    plt.scatter(df['longitude'], df['latitude'], s=10, c='yellow', edgecolors='blue', linewidths=1)
+    [plt.text( x=row['longitude'] + 0.005, y=row['latitude'], s=row['station'], fontsize=7) for k, row in df.iterrows()]
     plt.xticks(rotation=90)
     plt.show()
 
-    
+
+
+
 
     
 
