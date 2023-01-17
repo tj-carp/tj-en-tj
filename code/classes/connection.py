@@ -10,6 +10,19 @@ class Connection:
     def add_connection(self, station, distance):
         self.connections.update({station : distance})
 
+    # check connections
+    def check_connection(self, connection):
+        if connection.station1.name == self.station1.name:
+            return True
+        if connection.station1.name == self.station2.name:
+            return True
+        if connection.station2.name == self.station1.name:
+            return True
+        if connection.station2.name == self.station2.name:
+            return True
+        
+        return False
+
     # change if station has been used in route
     def set_visited(self):
         self.visited = True

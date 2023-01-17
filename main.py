@@ -11,10 +11,17 @@ if __name__ == "__main__":
     # # read stations
     # stations = Graph(stations_file, connections_file).stations
 
-    # read connections
+    # # read connections
     test_connections = Graph(stations_file, connections_file).connections
 
-    print(test_connections)
+    #create empty route
+    test_route = Route(test_connections)
+
+    test_route.add_connection(2)
+    test_route.add_connection(3)
+
+    print(test_route)
+    print(test_connections[3].station1.name)
 
     # # check if stations loaded correctly
     # for station in stations:
