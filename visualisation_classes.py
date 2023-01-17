@@ -15,8 +15,10 @@ if __name__ == "__main__":
     df = []
 
     for id, station in enumerate(stations):
-        y_coord = stations[station].coords[0]
-        x_coord = stations[station].coords[1]
+        y_coord = float(stations[station].coords[0])
+        x_coord = float(stations[station].coords[1])
+        # for k in stations[station].connections.keys():
+        #     print(type(k))
         df.append([station, y_coord, x_coord, stations[station].connections.keys()])
 
     df = pd.DataFrame(df)
@@ -25,9 +27,9 @@ if __name__ == "__main__":
 
     plt.scatter(df['latitude'], df['longitude'])
     plt.xticks(rotation=90)
-    # plt.ylim(51.75, 53)
-    # plt.xlim(4.2, 5.1)
     plt.show()
+
+    
 
     
 
