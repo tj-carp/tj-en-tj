@@ -1,17 +1,18 @@
 import csv
 
 from .station import Station
+from .connection import Connection
 
 
 class Graph():
     def __init__(self, stations_file, connections_file):
         self.stations = self.load_stations(stations_file)
-        self.load_connections(connections_file)
+        self.connections = self.load_connections(connections_file)
 
         
     def load_stations(self, stations_file):
         """
-        load all the stations into the graph
+        load all the stations
         """
         stations = {}
         with open(stations_file, 'r') as in_file:
@@ -25,14 +26,20 @@ class Graph():
 
     def load_connections(self, connections_file):
         """
-        load all the connections into the loaded stations
+        load all the connections and load stations into them
+
         """
+        connections = {}
+        connection_id = 1
         with open(connections_file, 'r') as in_file:
             reader = csv.DictReader(in_file)
 
             for row in reader:
-                for station in self.stations:
-                    if row['station1'] == station:
-                        self.stations[station].add_connection(self.stations[row['station2']], int(row['distance']))
-                    if row['station2'] == station:
-                        self.stations[station].add_connection(self.stations[row['station1']], int(row['distance']))
+                connections[connection_id] = Connection(self.stations[row['station1']], self.stations[row['station2']], int(row['distance']))
+                connection_id += 1 
+                # for station in self.stations:
+                #     if row['station1'] == station:
+                #         self.stations[station].add_connection(self.stations[row['station2']], int(row['distance']))
+                #     if row['station2'] == station:
+                #         self.stations[station].add_connection(self.stations[row['station1']], int(row['distance']))
+        return connections

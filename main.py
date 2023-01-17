@@ -8,10 +8,13 @@ if __name__ == "__main__":
     stations_file = f"data/stations_{map_name}.csv"
     connections_file = f"data/connections_text.csv"
 
-    # read stations
-    stations = Graph(stations_file, connections_file).stations
+    # # read stations
+    # stations = Graph(stations_file, connections_file).stations
 
-    print(stations['Alkmaar'].connections)
+    # read connections
+    test_connections = Graph(stations_file, connections_file).connections
+
+    print(test_connections)
 
     # # check if stations loaded correctly
     # for station in stations:
