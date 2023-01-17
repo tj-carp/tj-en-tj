@@ -27,7 +27,8 @@ if __name__ == "__main__":
 
     print(f"Here's a random route of at least 20 minutes: {test_route.get_route()}")
 
-    # # create random route of 5 stations
+    # # create random route
+    # 
     # random_station = random.choice(list(stations.keys()))
     
     # while len(test_route.route) < 5:            
