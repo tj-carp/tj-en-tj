@@ -3,6 +3,7 @@ class Route:
     def __init__(self, connections):
         self.connections = connections
         self.route = []
+        self.ids = []
         self.current_connection = 0
         self.length = 0
         
@@ -17,25 +18,28 @@ class Route:
         if not self.route:
             self.route.append(connection)
             connection.set_visited()
+            self.length += connection.distance
+            self.ids.append(connection_id)
             self.current_connection = connection
             return
-
         # check if connected
         if not connection.check_connection(self.current_connection):
-            print("not allowed")
+            print("no connection")
             return
-        # #check if station already in route
-        # if station in self.route:
-        #     return
-        # # check if station will not make route exceed length
-        # if self.length + self.current_station.connections[station.name] > 120:
-        #     return
+        #check if connection already used
+        if connection_id in self.ids:
+            print("connection already used in this route")
+            return
+        # check if connection will not make route exceed length
+        if self.length + connection.distance > 120:
+            return
 
         # add station and make it the current station in the route
-        self.route.append(station)
-        self.length += self.current_station.connections[station.name]
-        station.set_visited()
-        self.current_station = station
+        self.route.append(connection)
+        connection.set_visited()
+        self.length += connection.distance
+        self.ids.append(connection_id)
+        self.current_connection = connection
 
     
     # def get_route(self):

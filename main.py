@@ -18,10 +18,9 @@ if __name__ == "__main__":
     test_route = Route(test_connections)
 
     test_route.add_connection(2)
-    test_route.add_connection(3)
+    test_route.add_connection(1)
 
     print(test_route)
-    print(test_connections[3].station1.name)
 
     # # check if stations loaded correctly
     # for station in stations:
