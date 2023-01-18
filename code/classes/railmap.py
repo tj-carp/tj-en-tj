@@ -14,12 +14,11 @@ class RailMap:
         route = Route(self.connections)
         return route
 
-
     def __repr__(self):
         """
         Make sure that the object is printed properly
         """
-        rep = "Here's a random railmap of 7 routes: "
+        rep = "Here's a railmap: "
         
         for id, route in enumerate(self.routes, 1):
             rep += f"\n{id} {route}"

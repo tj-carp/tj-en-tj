@@ -11,6 +11,6 @@ if __name__ == "__main__":
     # read connections
     connections = Graph(stations_file, connections_file).connections
 
+    # use connections read to create random railmap
     random_railmap = randomise.create_railmap(connections)
-
     print(random_railmap)

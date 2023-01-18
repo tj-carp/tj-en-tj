@@ -40,17 +40,6 @@ class Route:
         self.length += connection.distance
         self.ids.append(connection_id)
         self.current_connection = connection
-
-    
-    # def get_route(self):
-    #     route_names = ''
-    #     for station in self.route:
-    #         if station == self.route[0]:
-    #             route_names += f"{station.name}"
-    #         else:
-    #             route_names += f" - {station.name}"
-        
-    #     return f"{route_names}"
         
 
     def __repr__(self):
