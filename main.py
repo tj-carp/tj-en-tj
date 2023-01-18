@@ -14,3 +14,11 @@ if __name__ == "__main__":
     # use connections read to create random railmap
     random_railmap = randomise.create_railmap(connections)
     print(random_railmap)
+
+    # implement quality formula
+    # calculate fraction of connections used
+    p = 1/28 * len(set(random_railmap.visited))
+    T = len(random_railmap.routes)
+    Min = random_railmap.minutes
+    K = p * 10000 - (T * 100 + Min)
+    print(f"Its score is {int(K)}")
