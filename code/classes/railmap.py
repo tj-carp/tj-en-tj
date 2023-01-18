@@ -1,4 +1,9 @@
 from code.classes.route import Route
+from code.visualisation.visualise_railmap import plot_routes
+import matplotlib.pyplot as plt
+import random
+
+
 
 class RailMap:
     
@@ -24,5 +29,9 @@ class RailMap:
             rep += f"\n{id} {route}"
             
         rep += f"\nIts total length is {self.minutes} minutes"
-
         return rep
+
+    def plot_routes(self):
+        plot_routes(self)
+    
+

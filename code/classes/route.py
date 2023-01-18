@@ -6,7 +6,6 @@ class Route:
         self.ids = []
         self.current_connection = 0
         self.length = 0
-        
 
     def add_connection(self, connection_id):
         """
