@@ -1,6 +1,6 @@
 from code.classes.graph import Graph
 from code.classes.railmap import RailMap
-
+from code.visualisation.visualise_railmap import plot_routes
 
 if __name__ == "__main__":
 
@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     railmap.create_railmap()
 
-    
+    railmap.plot_routes()
+
 
     # route.add_connection(2)
     # route.add_connection(1)

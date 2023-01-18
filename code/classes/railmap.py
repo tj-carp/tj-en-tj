@@ -1,5 +1,9 @@
 from code.classes.route import Route
+from code.visualisation.visualise_railmap import plot_routes
+import matplotlib.pyplot as plt
 import random
+
+
 
 class RailMap:
     
@@ -27,3 +31,6 @@ class RailMap:
         for id, route in enumerate(self.routes, 1):
             print(id, route)
 
+    def plot_routes(self):
+        plot_routes(self)
+    
