@@ -1,6 +1,6 @@
 from code.classes.graph import Graph
-from code.classes.route import Route
-import random
+from code.classes.railmap import RailMap
+
 
 if __name__ == "__main__":
 
@@ -11,26 +11,29 @@ if __name__ == "__main__":
     # read connections
     connections = Graph(stations_file, connections_file).connections
 
-    #create empty route
-    route = Route(connections)
+    railmap = RailMap(connections)
 
-    route.add_connection(2)
-    route.add_connection(1)
+    railmap.create_railmap()
 
-    print(route)
+    
+
+    # route.add_connection(2)
+    # route.add_connection(1)
+
+    # print(route)
 
     # # check if connections loaded correctly
     # for connection in connections:
     #     print (connections[connection])
 
-    # create random route of at least 20 minutes
-    random_connection = random.randint(1, 28)
+    # # create random route of at least 20 minutes
+    # random_connection = random.randint(1, 28)
     
-    while route.length < 20:            
-        route.add_connection(connections[random_connection])
-        random_connection = random.randint(1, 28)
+    # while route.length < 40:            
+    #     route.add_connection(random_connection)
+    #     random_connection = random.randint(1, 28)
 
-    print(f"Here's a random route of at least 20 minutes: {route}")
+    # print(f"Here's a random route of at least 20 minutes: {route}")
 
     # # create random route
     # 

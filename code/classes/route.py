@@ -24,12 +24,12 @@ class Route:
             return
         # check if connected
         if not connection.check_connection(self.current_connection):
-            print("no connection")
+            # print("no connection")
             return
-        #check if connection already used
-        if connection_id in self.ids:
-            print("connection already used in this route")
-            return
+        # #check if connection already used
+        # if connection_id in self.ids:
+        #     print("connection already used in this route")
+        #     return
         # check if connection will not make route exceed length
         if self.length + connection.distance > 120:
             return

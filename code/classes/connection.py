@@ -32,4 +32,4 @@ class Connection:
         """
         make sure that the object is printed properly if it is in a list/dict
         """
-        return f"{self.station1, self.station2, self.distance}"
+        return f"{self.station1} - {self.station2}"
