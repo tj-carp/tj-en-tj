@@ -1,5 +1,5 @@
 from code.classes.graph import Graph
-from code.classes.railmap import RailMap
+from code.algorithms import randomise
 
 
 if __name__ == "__main__":
@@ -11,11 +11,9 @@ if __name__ == "__main__":
     # read connections
     connections = Graph(stations_file, connections_file).connections
 
-    railmap = RailMap(connections)
+    random_railmap = randomise.create_railmap(connections)
 
-    railmap.create_railmap()
-
-    
+    print(random_railmap)
 
     # route.add_connection(2)
     # route.add_connection(1)

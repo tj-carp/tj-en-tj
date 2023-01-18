@@ -1,5 +1,4 @@
 from code.classes.route import Route
-import random
 
 class RailMap:
     
@@ -8,22 +7,21 @@ class RailMap:
         self.routes = []
         # cumulative minutes
         self.minutes = 0
-        # 
+        # connections used in railmap overall
         self.visited = []
 
-    def create_railmap(self):
-        while len(self.routes) < 7:
-            #create empty route
-            route = Route(self.connections)
+    def create_route(self):
+        route = Route(self.connections)
+        return route
 
-            # create random route of at least 40 minutes
-            while route.length < 40:
-                random_connection = random.randint(1, 28)            
-                route.add_connection(random_connection)
 
-            self.routes.append(route)
+    def __repr__(self):
+        """
+        Make sure that the object is printed properly
+        """
+        rep = "Here's a random railmap of 7 routes: "
         
-        print(f"Here's a random railmap of 7 routes: ")
         for id, route in enumerate(self.routes, 1):
-            print(id, route)
-
+            rep += f"\n{id} {route}"
+            
+        return rep
