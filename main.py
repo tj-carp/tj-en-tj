@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     railmap = RailMap(connections)
 
-    railmap.create_railmap()
+    railmap.create_route()
 
     railmap.plot_routes()
 
