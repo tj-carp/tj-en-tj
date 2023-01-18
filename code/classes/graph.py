@@ -36,10 +36,6 @@ class Graph():
 
             for row in reader:
                 connections[connection_id] = Connection(self.stations[row['station1']], self.stations[row['station2']], int(row['distance']))
-                connection_id += 1 
-                # for station in self.stations:
-                #     if row['station1'] == station:
-                #         self.stations[station].add_connection(self.stations[row['station2']], int(row['distance']))
-                #     if row['station2'] == station:
-                #         self.stations[station].add_connection(self.stations[row['station1']], int(row['distance']))
+                connection_id += 1
+                
         return connections

@@ -1,6 +1,11 @@
 from code.classes.graph import Graph
+<<<<<<< HEAD
 from code.classes.railmap import RailMap
 from code.visualisation.visualise_railmap import plot_routes
+=======
+from code.algorithms import randomise
+
+>>>>>>> d8142758d7d50822a25eab3b53513366e2304d0f
 
 if __name__ == "__main__":
 
@@ -11,6 +16,7 @@ if __name__ == "__main__":
     # read connections
     connections = Graph(stations_file, connections_file).connections
 
+<<<<<<< HEAD
     railmap = RailMap(connections)
 
     railmap.create_railmap()
@@ -45,3 +51,8 @@ if __name__ == "__main__":
     #     random_station = random.choice(list(stations.keys()))
     
     # print(f"Here's a random route of 5 stations: {test_route.get_route()}")
+=======
+    # use connections read to create random railmap
+    random_railmap = randomise.create_railmap(connections)
+    print(random_railmap)
+>>>>>>> d8142758d7d50822a25eab3b53513366e2304d0f
