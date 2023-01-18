@@ -8,35 +8,29 @@ if __name__ == "__main__":
     stations_file = f"data/stations_{map_name}.csv"
     connections_file = f"data/connections_text.csv"
 
-    # # read stations
-    # stations = Graph(stations_file, connections_file).stations
-
-    # # read connections
-    test_connections = Graph(stations_file, connections_file).connections
+    # read connections
+    connections = Graph(stations_file, connections_file).connections
 
     #create empty route
-    test_route = Route(test_connections)
+    route = Route(connections)
 
-    test_route.add_connection(2)
-    test_route.add_connection(1)
+    route.add_connection(2)
+    route.add_connection(1)
 
-    print(test_route)
+    print(route)
 
-    # # check if stations loaded correctly
-    # for station in stations:
-    #     print (stations[station])
+    # # check if connections loaded correctly
+    # for connection in connections:
+    #     print (connections[connection])
 
-    # # create empty route
-    # test_route = Route(stations)
-
-    # # create random route of at least 20 minutes
-    # random_station = random.choice(list(stations.keys()))
+    # create random route of at least 20 minutes
+    random_connection = random.randint(1, 28)
     
-    # while test_route.length < 20:            
-    #     test_route.add_station(stations[random_station])
-    #     random_station = random.choice(list(stations.keys()))
+    while route.length < 20:            
+        route.add_connection(connections[random_connection])
+        random_connection = random.randint(1, 28)
 
-    # print(f"Here's a random route of at least 20 minutes: {test_route.get_route()}")
+    print(f"Here's a random route of at least 20 minutes: {route}")
 
     # # create random route
     # 
