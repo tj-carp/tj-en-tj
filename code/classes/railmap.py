@@ -34,4 +34,3 @@ class RailMap:
     def plot_routes(self):
         plot_routes(self)
     
-
