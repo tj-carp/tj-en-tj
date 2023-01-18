@@ -24,4 +24,6 @@ class RailMap:
         for id, route in enumerate(self.routes, 1):
             rep += f"\n{id} {route}"
             
+        rep += f"\nIts total length is {self.minutes} minutes"
+
         return rep

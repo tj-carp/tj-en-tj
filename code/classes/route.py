@@ -57,4 +57,11 @@ class Route:
         """
         make sure that the object is printed properly if it is in a list/dict
         """
-        return f"{self.route}" 
+        rep = ''
+        for i, connection in enumerate(self.route):
+            if i == (len(self.route) - 1):
+                rep += f"{connection}"     
+            else:
+                rep += f"{connection}, "
+
+        return rep
