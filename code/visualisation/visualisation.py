@@ -31,6 +31,6 @@ def visualise(railmap, connections):
 
 
     plt.scatter(x_coords, y_coords)
-    plt.savefig("output/randomize/ railmap1")
+    plt.savefig("output/randomise/ railmap1")
     plt.show()
     
