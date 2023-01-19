@@ -8,7 +8,6 @@ def visualise_graph(connections):
         connection = connections[connection]
         x_route = []
         y_route = []
-        print(connection)
         x_route.append(connection.station1.coords[1])
         y_route.append(connection.station1.coords[0])
         x_route.append(connection.station2.coords[1])
