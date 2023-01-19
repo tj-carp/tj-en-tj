@@ -15,8 +15,21 @@ if __name__ == "__main__":
     connections = Graph(stations_file, connections_file).connections
 
     # use connections read to create random railmap
-    random_railmap = randomise.create_railmap(connections)
-    print(random_railmap)
+    #random_railmap = randomise.create_railmap(connections)
+    #print(random_railmap)
 
-    visualise(random_railmap, connections)
+    #visualise(random_railmap, connections)
+
+    scores = []
+
+    for i in range(100):
+        random_railmap = randomise.create_railmap(connections)
+        score = random_railmap.score()
+        scores.append(score)
+
+    scores.sort()
+    max_score = scores[(len(scores) - 1)]
+    min_score = scores[0]
+    print(min_score, max_score)
+
 
