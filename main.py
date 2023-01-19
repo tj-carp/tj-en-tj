@@ -18,9 +18,7 @@ if __name__ == "__main__":
     random_railmap = randomise.create_railmap(connections)
     print(random_railmap)
 
-    visualise(random_railmap)
-
-    visualise_graph(connections)
+    visualise(random_railmap, connections)
 
     # implement quality formula
     # calculate fraction of connections used
