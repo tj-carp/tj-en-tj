@@ -1,5 +1,4 @@
 from code.classes.route import Route
-from code.visualisation.visualise_railmap import plot_routes
 import matplotlib.pyplot as plt
 import random
 
@@ -17,6 +16,7 @@ class RailMap:
 
     def create_route(self):
         route = Route(self.connections)
+        # self.routes.append(route)
         return route
 
     def __repr__(self):

@@ -1,5 +1,6 @@
 from code.classes.graph import Graph
 from code.classes.railmap import RailMap
+from code.visualisation.visualise import visualise 
 from code.algorithms import randomise
 
 
@@ -12,15 +13,14 @@ if __name__ == "__main__":
     # read connections
     connections = Graph(stations_file, connections_file).connections
 
+    visualise(connections)
+
     railmap = RailMap(connections)
-
-    railmap.create_route()
-
-    railmap.plot_routes()
 
     # use connections read to create random railmap
     random_railmap = randomise.create_railmap(connections)
     print(random_railmap)
+    vis_map = visualise(random_railmap)
 
     # implement quality formula
     # calculate fraction of connections used
