@@ -15,6 +15,17 @@ class RailMap:
         # self.routes.append(route)
         return route
 
+    def score(self):
+        # implement quality formula
+        # calculate fraction of connections used
+        p = 1/28 * len(set(self.visited))
+        T = len(self.routes)
+        Min = self.minutes
+        K = p * 10000 - (T * 100 + Min)
+        # print(f"Its score is {int(K)}")
+        return int(K)
+
+
     def __repr__(self):
         """
         Make sure that the object is printed properly
@@ -25,4 +36,6 @@ class RailMap:
             rep += f"\n{id} {route}"
             
         rep += f"\nIts total length is {self.minutes} minutes"
+        rep += f"\nIts score is {self.score()}"
+
         return rep

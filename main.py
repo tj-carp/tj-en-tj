@@ -22,10 +22,3 @@ if __name__ == "__main__":
 
     visualise_graph(connections)
 
-    # implement quality formula
-    # calculate fraction of connections used
-    p = 1/28 * len(set(random_railmap.visited))
-    T = len(random_railmap.routes)
-    Min = random_railmap.minutes
-    K = p * 10000 - (T * 100 + Min)
-    print(f"Its score is {int(K)}")
