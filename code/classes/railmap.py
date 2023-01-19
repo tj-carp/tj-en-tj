@@ -1,8 +1,4 @@
 from code.classes.route import Route
-import matplotlib.pyplot as plt
-import random
-
-
 
 class RailMap:
     
@@ -30,8 +26,3 @@ class RailMap:
             
         rep += f"\nIts total length is {self.minutes} minutes"
         return rep
-
-    def plot_routes(self):
-        plot_routes(self)
-    
-
