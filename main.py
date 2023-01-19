@@ -22,8 +22,9 @@ if __name__ == "__main__":
 
     scores = []
     railmaps = {}
+    tries = 100000
 
-    for i in range(100):
+    for i in range(tries):
         random_railmap = randomise.create_railmap(connections)
         score = random_railmap.score()
         railmaps.update({score : random_railmap})
@@ -32,7 +33,13 @@ if __name__ == "__main__":
     scores.sort()
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
-    print(min_score, max_score)
+    print()
+    print(f"Amount of runs: {tries}")
+    print("----------------------------------------------------------------")
+    print(f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}")
+    print("----------------------------------------------------------------")
+    print()
     print(railmaps[max_score])
+    visualise(railmaps[max_score], connections)
 
 
