@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     scores = []
     railmaps = {}
-    tries = 100000
+    tries = 100
 
     for i in range(tries):
         random_railmap = randomise.create_railmap(connections)

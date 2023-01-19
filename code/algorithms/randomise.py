@@ -4,6 +4,7 @@ import random
 def create_railmap(connections):
     # create empty railmap
     railmap = RailMap(connections)
+    connection_ids = [*range(1, 29)]
     
     # fill railmap with 4 to 7 routes
     while len(railmap.routes) < random.randint(4,7):
@@ -12,7 +13,7 @@ def create_railmap(connections):
 
         # create random route of anywhere between 5 and 120 minutes
         while route.length < random.randint(5, 120):
-            random_connection = random.randint(1, 28)            
+            random_connection = random.choice(connection_ids)            
             route.add_connection(random_connection)
 
         railmap.minutes += route.length
