@@ -21,15 +21,18 @@ if __name__ == "__main__":
     #visualise(random_railmap, connections)
 
     scores = []
+    railmaps = {}
 
     for i in range(100):
         random_railmap = randomise.create_railmap(connections)
         score = random_railmap.score()
+        railmaps.update({score : random_railmap})
         scores.append(score)
 
     scores.sort()
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
     print(min_score, max_score)
+    print(railmaps[max_score])
 
 
