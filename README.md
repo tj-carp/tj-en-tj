@@ -21,7 +21,7 @@ python3 main.py
 
 
 ## Versioning
-* **Python 3.??**
+* **Python 3.8.10**
 
 ## Authors
 * **Jaco van der Meij**

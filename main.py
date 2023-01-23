@@ -1,5 +1,5 @@
 from code.classes.graph import Graph
-from code.visualisation.visualisation import visualise
+from code.visualisation.visualisation import visualise, visualise_scores
 from code.algorithms import randomise, greedy
 from sys import argv
 
@@ -25,14 +25,12 @@ if __name__ == "__main__":
     # for connection in connections:
     #     print(connections[connection])
 
-    
-
     # single_stations = greedy.create_railmap(connections)
     # print(single_stations)
     
     scores = []
     railmaps = {}
-    tries = 50000
+    tries = 1000
 
     for i in range(tries):
         random_railmap = randomise.create_railmap(connections)
@@ -40,16 +38,16 @@ if __name__ == "__main__":
         railmaps.update({score : random_railmap})
         scores.append(score)
 
+    visualise_scores(scores)
     scores.sort()
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
-    print()
-    print(f"Amount of runs: {tries}")
-    print("----------------------------------------------------------------")
-    print(f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}")
-    print("----------------------------------------------------------------")
-    print()
-    print(railmaps[max_score])
+
+    result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
+             f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
+             f"----------------------------------------------------------------\n\n"\
+             f"{railmaps[max_score]}"
+    print(result)
     # visualise(railmaps[max_score], connections)
 
 
