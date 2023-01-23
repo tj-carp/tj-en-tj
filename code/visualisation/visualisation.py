@@ -31,12 +31,14 @@ def visualise(railmap, connections):
 
 
     plt.scatter(x_coords, y_coords)
-    plt.savefig("output/randomise/ railmap1")
+    plt.savefig("output/randomise/railmap")
     plt.show()
+    plt.close()
 
 
 def visualise_scores(scores):
     plt.plot(scores)
-    plt.savefig("output/randomise/ scores")
+    plt.savefig("output/randomise/scores")
     plt.show()
+    plt.close()
     

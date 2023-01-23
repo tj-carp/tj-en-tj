@@ -7,10 +7,11 @@ def create_railmap(connections):
     connection_ids = [*range(1, len(connections) + 1)]
     # check whether holland or national map to determine maximum amount of routes in map
     max_routes = 7 if len(connections) == 28 else 20
+    min_routes = 4 if len(connections) == 28 else 9
 
 
-    # fill railmap with 4 to 7 or 20 routes
-    while len(railmap.routes) < random.randint(4, max_routes):
+    # fill railmap with 4 or 9 to 7 or 20 routes
+    while len(railmap.routes) < random.randint(min_routes, max_routes):
         #create empty route
         route = railmap.create_route()
 

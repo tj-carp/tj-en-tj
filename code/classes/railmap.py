@@ -12,7 +12,6 @@ class RailMap:
 
     def create_route(self):
         route = Route(self.connections)
-        # self.routes.append(route)
         return route
 
     def score(self):
@@ -31,7 +30,7 @@ class RailMap:
         """
         Make sure that the object is printed properly
         """
-        rep = "Here's a railmap: "
+        rep = "Railmap: "
         
         for id, route in enumerate(self.routes, 1):
             rep += f"\n{id} {route}"

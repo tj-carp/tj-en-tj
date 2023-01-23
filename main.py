@@ -30,7 +30,7 @@ if __name__ == "__main__":
     
     scores = []
     railmaps = {}
-    tries = 1000
+    tries = 10000
 
     for i in range(tries):
         random_railmap = randomise.create_railmap(connections)
@@ -48,6 +48,6 @@ if __name__ == "__main__":
              f"----------------------------------------------------------------\n\n"\
              f"{railmaps[max_score]}"
     print(result)
-    # visualise(railmaps[max_score], connections)
+    visualise(railmaps[max_score], connections)
 
 
