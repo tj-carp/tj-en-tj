@@ -6,6 +6,8 @@ class Route:
         self.ids = []
         self.current_connection = 0
         self.length = 0
+        # check whether holland or national map to determine maximum allowed route length
+        self.max_length = 120 if len(connections) == 28 else 180
 
     def add_connection(self, connection_id):
         """
@@ -30,7 +32,7 @@ class Route:
         #     print("connection already used in this route")
         #     return
         # check if connection will not make route exceed length
-        if self.length + connection.distance > 120:
+        if self.length + connection.distance > self.max_length:
             return
 
         # add station and make it the current station in the route

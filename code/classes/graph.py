@@ -35,7 +35,7 @@ class Graph():
             reader = csv.DictReader(in_file)
 
             for row in reader:
-                connections[connection_id] = Connection(self.stations[row['station1']], self.stations[row['station2']], int(row['distance']))
+                connections[connection_id] = Connection(self.stations[row['station1']], self.stations[row['station2']], int(float(row['distance'])))
                 connection_id += 1
                 
         return connections

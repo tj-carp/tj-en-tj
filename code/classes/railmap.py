@@ -16,9 +16,10 @@ class RailMap:
         return route
 
     def score(self):
+        fraction = len(self.connections)
         # implement quality formula
         # calculate fraction of connections used
-        p = 1/28 * len(set(self.visited))
+        p = 1/fraction * len(set(self.visited))
         T = len(self.routes)
         Min = self.minutes
         K = p * 10000 - (T * 100 + Min)
