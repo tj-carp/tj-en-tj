@@ -6,8 +6,9 @@ class Route:
         self.ids = []
         self.current_connection = 0
         self.length = 0
-        # check whether holland or national map to determine maximum allowed route length
+        # check whether holland or national map to determine maximum and minimum allowed route length
         self.max_length = 120 if len(connections) == 28 else 180
+        self.min_length = 100 if len(connections) == 28 else 160
 
     def add_connection(self, connection_id):
         """
@@ -27,10 +28,6 @@ class Route:
         if not connection.check_connection(self.current_connection):
             # print("no connection")
             return
-        # #check if connection already used
-        # if connection_id in self.ids:
-        #     print("connection already used in this route")
-        #     return
         # check if connection will not make route exceed length
         if self.length + connection.distance > self.max_length:
             return

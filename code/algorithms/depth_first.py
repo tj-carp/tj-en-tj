@@ -1,5 +1,8 @@
+# choose the first available connection (for previous connection if not first) to add, if it was not previously used
+# if it was previously used, leave it for this trajectory
+# maybe keep the last used id and keep it to avoid in the next iteration? and so on?
+
 from code.classes.railmap import RailMap
-import random
 
 def create_railmap(connections):
     # create empty railmap
@@ -7,17 +10,17 @@ def create_railmap(connections):
     connection_ids = [*range(1, len(connections) + 1)]
     # check whether holland or national map to determine maximum amount of routes in map
     max_routes = 7 if len(connections) == 28 else 20
-    min_routes = 4 if len(connections) == 28 else 9
 
 
-    # fill railmap with 4 or 9 to 7 or 20 routes
-    while len(railmap.routes) < random.randint(min_routes, max_routes):
+    # fill railmap with 7 or 20 routes
+    while len(railmap.routes) < max_routes #or?:
         #create empty route
         route = railmap.create_route()
 
         # create random route of anywhere between 5 and 120 or 180 minutes
-        while route.length < random.randint(route.min_length, route.max_length):
+        while route.length < route.max_length # or until the connection has no more unused connections?:
             try:
+                # new_connection = 
                 random_connection = random.choice(connection_ids)            
                 route.add_connection(random_connection)
                 connection_ids.remove(route.ids)
@@ -30,3 +33,8 @@ def create_railmap(connections):
         railmap.routes.append(route)
     
     return railmap
+
+        # #check if connection already used
+        # if connection_id in route.ids:
+        #     print("connection already used in this route")
+        #     return
