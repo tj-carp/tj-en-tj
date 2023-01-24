@@ -8,7 +8,6 @@ class Route:
         self.length = 0
         # check whether holland or national map to determine maximum and minimum allowed route length
         self.max_length = 120 if len(connections) == 28 else 180
-        self.min_length = 100 if len(connections) == 28 else 160
 
     def add_connection(self, connection_id):
         """
