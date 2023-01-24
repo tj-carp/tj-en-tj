@@ -30,7 +30,7 @@ if __name__ == "__main__":
     
     scores = []
     railmaps = {}
-    tries = 1000
+    tries = 1
 
     for i in range(tries):
         random_railmap = greedy.create_railmap(connections)

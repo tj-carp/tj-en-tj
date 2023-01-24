@@ -1,5 +1,6 @@
 from code.classes.railmap import RailMap
-
+from collections import Counter 
+from copy import deepcopy
 def extend_route(route, current_connection, railmap):
     current_connection.set_visited()
     railmap.visited.append(current_connection)
@@ -73,9 +74,7 @@ def create_railmap(connections):
 
 
         #connectables = list(filter(lambda connection: connection.station1 == single or connection.station2 == single, connections))
-    placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
-    remnants = set(filter(lambda connection: connection not in placed, connections))
-    overlap = set(filter(lambda connection: placed.count(connection) == 2, placed))
+    
     #overlap = set(filter(lambda connection: connection[1] > 1, Counter(placed).items()))
     solutions = [railmap]
      
@@ -100,7 +99,15 @@ def create_railmap(connections):
 
     placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
     #remnants = set(filter(lambda connection: connection not in placed, connections))
-    overlap = set(filter(lambda connection: placed.count(connection) == 2, placed))
+    overlap = dict(sorted(Counter(set(filter(lambda connection: placed.count(connection) == 2, placed))).items(), lambda x: (x[1], x[0])))
 
+    for route in overlap:
+        i = 0
+        for connection in route:
+            cutoff = min(connection[i + 1:], connection[:i], key = len)
+            i += 1
+            if 
+
+        
 
     return railmap
