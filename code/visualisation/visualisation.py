@@ -37,7 +37,7 @@ def visualise(railmap, connections):
 
 
 def visualise_scores(scores):
-    plt.plot(scores)
+    plt.hist(scores)
     plt.savefig("output/randomise/scores")
     plt.show()
     plt.close()

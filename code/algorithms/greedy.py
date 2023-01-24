@@ -98,4 +98,9 @@ def create_railmap(connections):
         route.route.append(final_limbs.pop())
         create_route(route, current_station, route.route[0], railmap, connections_per_station)
 
+    placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
+    #remnants = set(filter(lambda connection: connection not in placed, connections))
+    overlap = set(filter(lambda connection: placed.count(connection) == 2, placed))
+
+
     return railmap
