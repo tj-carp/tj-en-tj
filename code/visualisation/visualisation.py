@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 def visualise(railmap, connections):
 
@@ -29,16 +30,18 @@ def visualise(railmap, connections):
             y_route.append(connection.station2.coords[0])
         plt.plot(x_route, y_route, '-o')
 
+    now = str(datetime.now())
+    print(now)
 
     plt.scatter(x_coords, y_coords)
-    plt.savefig("output/randomise/railmap")
+    plt.savefig(f"output/randomise/railmap-{str(now)}.jpg")
     plt.show()
     plt.close()
 
-
-def visualise_scores(scores):
-    plt.hist(scores)
-    plt.savefig("output/randomise/scores")
-    plt.show()
-    plt.close()
     
+def visualise_scores(scores):
+    plt.hist(scores, bins=50)
+    plt.xlabel("Score on objective function")
+    plt.ylabel("Frequency")
+    plt.title(f"Distribution of scores with random for {len(scores)} tries")
+    plt.show()

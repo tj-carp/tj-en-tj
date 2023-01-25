@@ -37,10 +37,9 @@ if __name__ == "__main__":
         score = random_railmap.score()
         railmaps.update({score : random_railmap})
         scores.append(score)
-        print(i, score)
 
-    visualise_scores(scores)
     scores.sort()
+    visualise_scores(scores)
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
 
@@ -50,5 +49,3 @@ if __name__ == "__main__":
              f"{railmaps[max_score]}"
     print(result)
     visualise(railmaps[max_score], connections)
-
-
