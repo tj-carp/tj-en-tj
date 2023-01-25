@@ -30,17 +30,27 @@ if __name__ == "__main__":
     
     scores = []
     railmaps = {}
-    tries = 1
+    tries = 100000
+
+ # -------------------------GREEDY---------------------------------------------------------------------
+
+    # for i in range(tries):
+    #     random_railmap = greedy.create_railmap(connections)
+    #     score = random_railmap.score()
+    #     railmaps.update({score : random_railmap})
+    #     scores.append(score)
+    #     print(i, score)
+
+ # ------------------------RANDOM-------------------------------------------------------------------------
 
     for i in range(tries):
-        random_railmap = greedy.create_railmap(connections)
+        random_railmap = randomise.create_railmap(connections)
         score = random_railmap.score()
         railmaps.update({score : random_railmap})
         scores.append(score)
-        print(i, score)
 
-    visualise_scores(scores)
     scores.sort()
+    visualise_scores(scores)
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
 
@@ -50,5 +60,3 @@ if __name__ == "__main__":
              f"{railmaps[max_score]}"
     print(result)
     visualise(railmaps[max_score], connections)
-
-

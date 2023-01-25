@@ -35,10 +35,10 @@ def visualise(railmap, connections):
     plt.show()
     plt.close()
 
-
-def visualise_scores(scores):
-    plt.hist(scores)
-    plt.savefig("output/randomise/scores")
-    plt.show()
-    plt.close()
     
+def visualise_scores(scores):
+    plt.hist(scores, bins=50)
+    plt.xlabel("Score on objective function")
+    plt.ylabel("Frequency")
+    plt.title(f"Distribution of scores with random for {len(scores)} tries")
+    plt.show()

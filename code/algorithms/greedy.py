@@ -106,7 +106,7 @@ def create_railmap(connections):
         for connection in route:
             cutoff = min(connection[i + 1:], connection[:i], key = len)
             i += 1
-            if 
+            
 
         
 
