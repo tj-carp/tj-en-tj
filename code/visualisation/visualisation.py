@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 def visualise(railmap, connections):
 
@@ -29,9 +30,11 @@ def visualise(railmap, connections):
             y_route.append(connection.station2.coords[0])
         plt.plot(x_route, y_route, '-o')
 
+    now = str(datetime.now())
+    print(now)
 
     plt.scatter(x_coords, y_coords)
-    plt.savefig("output/randomise/railmap")
+    plt.savefig(f"output/randomise/railmap-{str(now)}.jpg")
     plt.show()
     plt.close()
 
