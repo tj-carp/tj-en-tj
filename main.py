@@ -19,15 +19,12 @@ if __name__ == "__main__":
     stations_file = f"data/stations_{map_name}.csv"
     connections_file = f"data/connections_{map_name}_text.csv"
 
-    # read connections
+    # read connections from given data
     connections = Graph(stations_file, connections_file).connections
 
-    # for connection in connections:
-    #     print(connections[connection])
 
-    # single_stations = greedy.create_railmap(connections)
-    # print(single_stations)
-    
+    # --------------------------- Random -----------------------------------
+
     scores = []
     railmaps = {}
     tries = 100000
@@ -49,3 +46,11 @@ if __name__ == "__main__":
              f"{railmaps[max_score]}"
     print(result)
     visualise(railmaps[max_score], connections)
+
+    
+    # --------------------------- Greedy ---------------------------------------
+
+    greedy_railmap = greedy.create_railmap(connections)
+    score = greedy_railmap.score()
+    visualise(greedy_railmap, connections)
+
