@@ -2,6 +2,23 @@
 # if it was previously used, leave it for this trajectory
 # maybe keep the last used id and keep it to avoid in the next iteration? and so on?
 
+# or: given a starting point (first connection in collection connections):
+# look through all connections and pick out the ones that have matching stations and from these choose the first
+# save the last connection in the route in a list and remove it
+# call the same function again but now the previous second connection will be the first
+# repeat until having filled a railmap
+# once the railmap is full, keep running the function. for every new route made, consider how
+# for each of the current routes if replacing it with the new route would improve the score
+# replace the route by which the score will be improved the most
+# repeat until having iterated through all
+
+
+# or: pick first connection from collection. then add the first one after that which is possible to add
+# and so on until having a full route
+# copy this route and try a different connection for the last part of the route
+# repeat above until having tried all options ?
+
+
 from code.classes.railmap import RailMap
 
 def create_railmap(connections):

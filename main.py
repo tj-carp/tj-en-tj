@@ -30,10 +30,10 @@ if __name__ == "__main__":
     
     scores = []
     railmaps = {}
-    tries = 1
+    tries = 100000
 
     for i in range(tries):
-        random_railmap = greedy.create_railmap(connections)
+        random_railmap = randomise.create_railmap(connections)
         score = random_railmap.score()
         railmaps.update({score : random_railmap})
         scores.append(score)
