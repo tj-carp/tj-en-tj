@@ -1,6 +1,6 @@
 from code.classes.graph import Graph
 from code.visualisation.visualisation import visualise, visualise_scores
-from code.algorithms import randomise, greedy
+from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
 
 
@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     # --------------------------- Random ---------------------------------------
 
-    randomise.run(connections)
+    #randomise.run(connections)
     
     # --------------------------- Greedy ---------------------------------------
 
@@ -35,3 +35,4 @@ if __name__ == "__main__":
 
    # --------------------------- Hillclimber ------------------------------------
 
+    hillclimber.create_railmap(connections)
