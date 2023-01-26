@@ -23,29 +23,29 @@ if __name__ == "__main__":
     connections = Graph(stations_file, connections_file).connections
 
 
-    # --------------------------- Random -----------------------------------
+    # # --------------------------- Random -----------------------------------
 
-    scores = []
-    railmaps = {}
-    tries = 100000
+    # scores = []
+    # railmaps = {}
+    # tries = 100000
 
-    for i in range(tries):
-        random_railmap = randomise.create_railmap(connections)
-        score = random_railmap.score()
-        railmaps.update({score : random_railmap})
-        scores.append(score)
+    # for i in range(tries):
+    #     random_railmap = randomise.create_railmap(connections)
+    #     score = random_railmap.score()
+    #     railmaps.update({score : random_railmap})
+    #     scores.append(score)
 
-    scores.sort()
-    visualise_scores(scores)
-    max_score = scores[(len(scores) - 1)]
-    min_score = scores[0]
+    # scores.sort()
+    # visualise_scores(scores)
+    # max_score = scores[(len(scores) - 1)]
+    # min_score = scores[0]
 
-    result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
-             f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
-             f"----------------------------------------------------------------\n\n"\
-             f"{railmaps[max_score]}"
-    print(result)
-    visualise(railmaps[max_score], connections)
+    # result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
+    #          f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
+    #          f"----------------------------------------------------------------\n\n"\
+    #          f"{railmaps[max_score]}"
+    # print(result)
+    # visualise(railmaps[max_score], connections)
 
     
     # --------------------------- Greedy ---------------------------------------

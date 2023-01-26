@@ -16,7 +16,7 @@ def create_railmap(connections):
         #create empty route
         route = railmap.create_route()
 
-        # create random route of anywhere between 5 and 120 or 180 minutes
+        # create random route of anywhere between 100 or 160 and 120 or 180 minutes
         while route.length < random.randint(min_length, route.max_length):
             try:
                 random_connection = random.choice(connection_ids)            
