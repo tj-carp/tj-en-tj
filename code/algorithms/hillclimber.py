@@ -13,12 +13,12 @@ def create_railmap(connections):
 
     best_score = random_railmap.score()
 
+    #print(best_score)
     print(best_score)
-
     better_railmap = deepcopy(random_railmap)
     new_railmap = deepcopy(random_railmap)
 
-    for i in range(40):
+    for i in range(50):
         # create a new random route of anywhere between 100 or 160 and 120 or 180 minutes
         new_route = random_railmap.create_route()
 
@@ -32,23 +32,26 @@ def create_railmap(connections):
                 new_route.add_connection(random_connection)
 
         # check against existing routes and if swapping improves score, swap
-
-        for route in new_railmap.routes:
+        for j, route in enumerate(new_railmap.routes):
             new_railmap.minutes -= route.length
             new_railmap.visited = list(set(new_railmap.visited) - set(route.ids))
-            route = new_route
-            new_railmap.minutes = new_route.length
+            new_railmap.routes[j] = new_route
+            new_railmap.minutes += new_route.length
             new_railmap.visited += new_route.ids
             new_score = new_railmap.score()
             if new_score > best_score:
                 best_score = new_score
-                better_railmap = new_railmap
-            new_railmap = deepcopy(random_railmap)
-        
-        print(best_score)
-        new_railmap = deepcopy(better_railmap)    
+                best_railmap = new_railmap
 
-    print(better_railmap)
+            if i > 0:
+                new_railmap = deepcopy(better_railmap)
+            else:
+                new_railmap = deepcopy(random_railmap)
+        
+        #print(best_score)
+        better_railmap = deepcopy(best_railmap)    
+
+    print(best_score)
 
 
     # repeat a couple times ?
