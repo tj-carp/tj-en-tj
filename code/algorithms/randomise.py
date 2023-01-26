@@ -1,4 +1,5 @@
 from code.classes.railmap import RailMap
+from code.visualisation.visualisation import visualise, visualise_scores
 import random
 
 def create_railmap(connections):
@@ -31,3 +32,28 @@ def create_railmap(connections):
         railmap.routes.append(route)
     
     return railmap
+
+
+def run(connections):
+    scores = []
+    railmaps = {}
+    tries = 10000
+
+    for i in range(tries):
+        random_railmap = create_railmap(connections)
+        score = random_railmap.score()
+        railmaps.update({score : random_railmap})
+        scores.append(score)
+
+    visualise_scores(scores)
+    scores.sort()
+
+    max_score = scores[(len(scores) - 1)]
+    min_score = scores[0]
+
+    result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
+             f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
+             f"----------------------------------------------------------------\n\n"\
+             f"{railmaps[max_score]}"
+    print(result)
+    visualise(railmaps[max_score], connections)

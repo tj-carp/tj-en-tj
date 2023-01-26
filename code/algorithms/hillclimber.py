@@ -24,16 +24,16 @@ def create_railmap(connections):
             random_connection = random.randint(connection_ids)            
             new_route.add_connection(random_connection)
 
-    # check against existing routes and if swapping improves score, swap
-    new_railmaps = {}
-    new_railmap = random_railmap
-    for route in new_railmap.routes:
-        new_railmap.minutes -= route.length
-        new_railmap.visited -= route.ids
-        new_railmap.routes[route] =
-        route = new_route
-        new_railmap.minutes += new_route.length
-        new_railmap.visited += new_route.ids
-        new_railmap.routes[route] = 
+    # # check against existing routes and if swapping improves score, swap
+    # new_railmaps = {}
+    # new_railmap = random_railmap
+    # for route in new_railmap.routes:
+    #     new_railmap.minutes -= route.length
+    #     new_railmap.visited -= route.ids
+    #     new_railmap.routes[route] =
+    #     route = new_route
+    #     new_railmap.minutes += new_route.length
+    #     new_railmap.visited += new_route.ids
+    #     new_railmap.routes[route] = 
 
-    # repeat a couple times ?
+    # # repeat a couple times ?
