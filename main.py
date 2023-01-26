@@ -23,7 +23,7 @@ if __name__ == "__main__":
     connections = Graph(stations_file, connections_file).connections
 
 
-    # # --------------------------- Random -----------------------------------
+    # --------------------------- Random ---------------------------------------
 
     randomise.run(connections)
     
@@ -32,4 +32,6 @@ if __name__ == "__main__":
     # greedy_railmap = greedy.create_railmap(connections)
     # score = greedy_railmap.score()
     # visualise(greedy_railmap, connections)
+
+   # --------------------------- Hillclimber ------------------------------------
 
