@@ -2,8 +2,10 @@ from code.classes.railmap import RailMap
 from copy import deepcopy
 from code.algorithms import randomise
 import random
+import time
 
 def create_railmap(connections):
+    st = time.time()
     # create random railmap
     random_railmap = randomise.create_railmap(connections)
     connection_ids = [*range(1, len(connections) + 1)]
@@ -12,13 +14,13 @@ def create_railmap(connections):
     min_length = 100 if len(connections) == 28 else 160
 
     best_score = random_railmap.score()
-
-    #print(best_score)
+    first_score = random_railmap.score()
     print(best_score)
     better_railmap = deepcopy(random_railmap)
+    best_railmap = deepcopy(random_railmap)
     new_railmap = deepcopy(random_railmap)
 
-    for i in range(50):
+    for i in range(1000):
         # create a new random route of anywhere between 100 or 160 and 120 or 180 minutes
         new_route = random_railmap.create_route()
 
@@ -31,7 +33,7 @@ def create_railmap(connections):
                 random_connection = random.choice(connection_ids)            
                 new_route.add_connection(random_connection)
 
-        # check against existing routes and if swapping improves score, swap
+        # check against existing routes and swap with existing route that gives biggest score gain
         for j, route in enumerate(new_railmap.routes):
             new_railmap.minutes -= route.length
             new_railmap.visited = list(set(new_railmap.visited) - set(route.ids))
@@ -41,17 +43,16 @@ def create_railmap(connections):
             new_score = new_railmap.score()
             if new_score > best_score:
                 best_score = new_score
-                best_railmap = new_railmap
+                best_railmap = deepcopy(new_railmap)
 
             if i > 0:
                 new_railmap = deepcopy(better_railmap)
             else:
                 new_railmap = deepcopy(random_railmap)
         
-        #print(best_score)
-        better_railmap = deepcopy(best_railmap)    
-
+        better_railmap = deepcopy(best_railmap)
+        print(i, best_score)
+    print(first_score)
     print(best_score)
-
-
-    # repeat a couple times ?
+    et = time.time()
+    print (et-st)

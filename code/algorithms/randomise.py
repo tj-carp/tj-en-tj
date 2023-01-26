@@ -55,5 +55,7 @@ def run(connections):
              f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
              f"----------------------------------------------------------------\n\n"\
              f"{railmaps[max_score]}"
+    
     print(result)
     visualise(railmaps[max_score], connections)
+    
