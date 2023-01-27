@@ -2,6 +2,10 @@ from code.classes.graph import Graph
 from code.visualisation.visualisation import visualise, visualise_scores
 from code.algorithms import randomise, greedy
 from sys import argv
+from mpl_toolkits.basemap import Basemap
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 
 if __name__ == "__main__":
@@ -27,7 +31,7 @@ if __name__ == "__main__":
 
     scores = []
     railmaps = {}
-    tries = 100000
+    tries = 1000
 
     for i in range(tries):
         random_railmap = randomise.create_railmap(connections)
@@ -36,7 +40,7 @@ if __name__ == "__main__":
         scores.append(score)
 
     scores.sort()
-    visualise_scores(scores)
+    # visualise_scores(scores)
     max_score = scores[(len(scores) - 1)]
     min_score = scores[0]
 
@@ -45,12 +49,15 @@ if __name__ == "__main__":
              f"----------------------------------------------------------------\n\n"\
              f"{railmaps[max_score]}"
     print(result)
+    # Create the Basemap object
+
     visualise(railmaps[max_score], connections)
+    plt.show()
 
     
     # --------------------------- Greedy ---------------------------------------
 
-    greedy_railmap = greedy.create_railmap(connections)
-    score = greedy_railmap.score()
-    visualise(greedy_railmap, connections)
+    # greedy_railmap = greedy.create_railmap(connections)
+    # score = greedy_railmap.score()
+    # visualise(greedy_railmap, connections)
 
