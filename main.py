@@ -1,6 +1,6 @@
 from code.classes.graph import Graph
 from code.visualisation.visualisation import visualise, visualise_scores
-from code.algorithms import randomise, greedy
+from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
 from mpl_toolkits.basemap import Basemap
 import matplotlib.pyplot as plt
@@ -27,33 +27,9 @@ if __name__ == "__main__":
     connections = Graph(stations_file, connections_file).connections
 
 
-    # --------------------------- Random -----------------------------------
+    # --------------------------- Random ---------------------------------------
 
-    scores = []
-    railmaps = {}
-    tries = 1000
-
-    for i in range(tries):
-        random_railmap = randomise.create_railmap(connections)
-        score = random_railmap.score()
-        railmaps.update({score : random_railmap})
-        scores.append(score)
-
-    scores.sort()
-    # visualise_scores(scores)
-    max_score = scores[(len(scores) - 1)]
-    min_score = scores[0]
-
-    result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
-             f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
-             f"----------------------------------------------------------------\n\n"\
-             f"{railmaps[max_score]}"
-    print(result)
-    # Create the Basemap object
-
-    visualise(railmaps[max_score], connections)
-    plt.show()
-
+    #randomise.run(connections)
     
     # --------------------------- Greedy ---------------------------------------
 
@@ -61,3 +37,6 @@ if __name__ == "__main__":
     # score = greedy_railmap.score()
     # visualise(greedy_railmap, connections)
 
+   # --------------------------- Hillclimber ------------------------------------
+
+    hillclimber.create_railmap(connections)

@@ -1,6 +1,7 @@
 from code.classes.railmap import RailMap
 from collections import Counter 
 from copy import deepcopy
+
 def extend_route(route, current_connection, railmap):
     current_connection.set_visited()
     railmap.visited.append(current_connection)
@@ -27,7 +28,7 @@ def create_route(route, current_station, current_connection, railmap, connection
             if route.length + current_connection.distance >= route.max_length:
                 print(connections_per_station[current_station][:-1])
                 for j in reversed(connections_per_station[current_station][:-1]):
-                    if route.length + j.distance and j not in route.route:
+                    if route.length + j.distance and route.visited == False:
                         extend_route(route, j, railmap)
                 break
             else:
@@ -51,7 +52,7 @@ def create_railmap(connections):
     connections_per_station = dict(map(lambda station: (station, sorted(list(filter(lambda connection: connection.station1 == station or connection.station2 == station, connections)),key = lambda connection: connection.distance)),set(sum((list(map(lambda connection: connection.station1, connections)), list(map(lambda connection: connection.station2, connections))), []))))
 
     # for i in connections_per_station.keys():
-    #    print(i)
+    #    print(i)e
 
     # stations= sum((list(map(lambda connection: connection.station1, connections)),
     #               list(map(lambda connection: connection.station2, connections))), [])
@@ -76,7 +77,6 @@ def create_railmap(connections):
         #connectables = list(filter(lambda connection: connection.station1 == single or connection.station2 == single, connections))
     
     #overlap = set(filter(lambda connection: connection[1] > 1, Counter(placed).items()))
-    solutions = [railmap]
      
     # print(remnants)
     # print(overlap)
@@ -97,16 +97,30 @@ def create_railmap(connections):
         route.route.append(final_limbs.pop())
         create_route(route, current_station, route.route[0], railmap, connections_per_station)
 
-    placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
-    #remnants = set(filter(lambda connection: connection not in placed, connections))
-    overlap = dict(sorted(Counter(set(filter(lambda connection: placed.count(connection) == 2, placed))).items(), lambda x: (x[1], x[0])))
+    
 
-    for route in overlap:
-        i = 0
-        for connection in route:
-            cutoff = min(connection[i + 1:], connection[:i], key = len)
-            i += 1
-            
+    # placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
+    # #remnants = set(filter(lambda connection: connection not in placed, connections))
+    # overlap = dict(sorted(Counter(set(filter(lambda connection: placed.count(connection) == 2, placed))).items(), lambda x: (x[1], x[0])))
+
+    
+    # splitter = lambda slice: sum(tuple(map(lambda connection: connection.distance, slice)))
+
+    # for connection in overlap:
+    #     i = 0
+    #     for r in route:
+    #         cutoff = min(route[i + 1:], route[:i], key = splitter)
+    #         i += 1
+    #         placed_copy = deepcopy(placed)
+    #         if len(set(map(lambda connection: placed_copy.remove(connection), cutoff))) == len(connections):
+    #             railmap_copy = deepcopy(railmap)
+    #             for j in railmap_copy.routes:-
+
+    for c in connections:
+        c.visited = False
+
+
+
 
         
 
