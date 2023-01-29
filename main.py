@@ -11,14 +11,21 @@ import numpy as np
 if __name__ == "__main__":
 
     # check command line arguments
-    if len(argv) not in [1, 2]:
-        print("Usage: python3 main.py [area]")
+    if len(argv) not in [1]:
+        print("Usage: python3 main.py")
         exit(1)
-    # load the requested map or else holland
-    if len(argv) == 2:
-        map_name = argv[1]
-    elif len(argv) == 1:
+    # request input to determine map name
+    print("For Holland, type 1 \nFor The Netherlands, type 2")
+    choice = input("Type here: ")
+
+    # choose input map name and if valid use to load data
+    if choice == '1':
         map_name = "holland"
+    elif choice == '2':
+        map_name = "national"
+    else:
+        print("you have bungled it")
+        exit(1)
 
     stations_file = f"data/stations_{map_name}.csv"
     connections_file = f"data/connections_{map_name}_text.csv"

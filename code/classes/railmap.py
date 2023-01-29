@@ -11,10 +11,16 @@ class RailMap:
         self.visited = []
 
     def create_route(self):
+        """
+        Create an empty route object
+        """
         route = Route(self.connections)
         return route
 
     def score(self):
+        """
+        Calculate the quality score of railmap
+        """
         fraction = len(self.connections)
         # implement quality formula
         # calculate fraction of connections used
