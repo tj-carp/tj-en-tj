@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     # --------------------------- Random ---------------------------------------
 
-    #randomise.run(connections)
+    randomise.run(connections)
     
     # --------------------------- Greedy ---------------------------------------
 
@@ -39,4 +39,4 @@ if __name__ == "__main__":
 
    # --------------------------- Hillclimber ------------------------------------
 
-    hillclimber.create_railmap(connections)
+    #hillclimber.create_railmap(connections)
