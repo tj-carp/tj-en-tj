@@ -1,14 +1,47 @@
 from code.classes.railmap import RailMap
-from collections import Counter 
-from copy import deepcopy
+from code.visualisation.visualisation import visualise, visualise_scores
+from collections import Counter
+from itertools import combinations
+
+def run(connections):
+    scores = []
+    railmaps = {}
+    tries = 1
+
+    for i in range(tries):
+        greedy_railmap = create_railmap(connections)
+        score = greedy_railmap.score()
+        railmaps.update({score : greedy_railmap})
+        print(score)
+        scores.append(score)
+
+    # visualise_scores(scores)
+    scores.sort()
+
+    max_score = scores[-1]
+    min_score = scores[0]
+
+    result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
+             f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
+             f"----------------------------------------------------------------\n\n"\
+             f"{railmaps[max_score]}"
+    print(result)
+    
+    #print(Counter(sum(tuple(map(lambda route: route.route,railmaps[max_score].routes)),[])))
+
+    visualise(railmaps[max_score], connections)
+    visualise_scores(scores)
+
 
 def extend_route(route, current_connection, railmap):
+    
     current_connection.set_visited()
     railmap.visited.append(current_connection)
-    print(current_connection.distance)
+    # print(current_connection.distance)
     route.length += current_connection.distance
-    print(route.length)
+    # print(route.length)
     route.route.append(current_connection)
+    # print('run', route.route)
     
 def next_connection(current_station, route, connections_per_station):
     for connection in connections_per_station[current_station]:
@@ -18,32 +51,36 @@ def next_connection(current_station, route, connections_per_station):
 
 def create_route(route, current_station, current_connection, railmap, connections_per_station):
     next_station = lambda station1, station2: station1 if station2 == current_station else station2
-    try:
-        while True:
-            current_station = next_station(current_connection.station1, current_connection.station2)
-            print(current_station)
-            current_connection = next_connection(current_station, route.route, connections_per_station) # connections_per_station[current_station][-1]
-            print(current_connection)
-            print(current_station)  
-            if route.length + current_connection.distance >= route.max_length:
-                print(connections_per_station[current_station][:-1])
-                for j in reversed(connections_per_station[current_station][:-1]):
-                    if route.length + j.distance and route.visited == False:
-                        extend_route(route, j, railmap)
-                break
-            else:
-                extend_route(route, current_connection, railmap)
-    except:
-        return
+    
+    #try:
+    while True:
+        current_station = next_station(current_connection.station1, current_connection.station2)
+        # print(current_station)
+        current_connection = next_connection(current_station, route.route, connections_per_station) # connections_per_station[current_station][-1]
+        print(current_connection)
+        print(current_station)  
+        if current_connection == None:
+            break
+        elif route.length + current_connection.distance >= route.max_length and current_connection.visited == False:
+            # print(connections_per_station[current_station][:-1])
+            for j in reversed(connections_per_station[current_station][:-1]):
+                if route.length + j.distance >= route.max_length and j.visited == False:
+                    extend_route(route, j, railmap)
+            break
+        else:
+            extend_route(route, current_connection, railmap)
+    #except:
+    #    return
     
     # for i in route.route:
     #     print(i)
     railmap.minutes += route.length         
-    print(railmap.minutes)
+    # print(railmap.minutes)
     railmap.routes.append(route)
+    print('railmap.routes', len(railmap.routes))
 
 def create_railmap(connections):
-
+    
     connections = connections.values()
 
     # uniques = set(sum((list(map(lambda connection: connection.station1, connections)),
@@ -52,7 +89,7 @@ def create_railmap(connections):
     connections_per_station = dict(map(lambda station: (station, sorted(list(filter(lambda connection: connection.station1 == station or connection.station2 == station, connections)),key = lambda connection: connection.distance)),set(sum((list(map(lambda connection: connection.station1, connections)), list(map(lambda connection: connection.station2, connections))), []))))
 
     # for i in connections_per_station.keys():
-    #    print(i)e
+    #    print(i)
 
     # stations= sum((list(map(lambda connection: connection.station1, connections)),
     #               list(map(lambda connection: connection.station2, connections))), [])
@@ -90,7 +127,7 @@ def create_railmap(connections):
     unsaturated_stations = list(dict(filter(lambda item: tuple(map(lambda connection: connection.visited, item[1])).count(False) == 1, connections_per_station.items())).keys())
     final_limbs = sum(list(map(lambda station: list(filter(lambda connection: connection.visited == False ,connections_per_station[station])), unsaturated_stations)),[])
 
-    while final_limbs:
+    while len(railmap.routes) < 7 and len(Counter(tuple(map(lambda connection: connection.visited, connections))).keys()) > 1:
         current_station = unsaturated_stations.pop()
         route = railmap.create_route()
         #print(final_limbs)
@@ -100,10 +137,23 @@ def create_railmap(connections):
     
 
     # placed = sum(tuple(map(lambda route: route.route, railmap.routes)),[])
-    # #remnants = set(filter(lambda connection: connection not in placed, connections))
+    #remnants = set(filter(lambda connection: connection not in placed, connections))
     # overlap = dict(sorted(Counter(set(filter(lambda connection: placed.count(connection) == 2, placed))).items(), lambda x: (x[1], x[0])))
 
+    route_combinations = list(combinations(railmap.routes, 2))
+
+    chains = list()
+
+    for i, j in route_combinations:
+        chain = list()
+        for connect in i.route:
+            if connect in j.route:
+                chain.append(connect)
+            elif chain:
+                chains.append(chain)
     
+    # print('chains', dict(map(lambda connection: (connection[0],connection[-1]),set(chains))))
+
     # splitter = lambda slice: sum(tuple(map(lambda connection: connection.distance, slice)))
 
     # for connection in overlap:

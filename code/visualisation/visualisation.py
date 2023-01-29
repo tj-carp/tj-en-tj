@@ -53,8 +53,8 @@ def visualise(railmap, connections):
     now = str(datetime.now())
     print(f"saved file as railmap-{now}")
     map.scatter(x_coords, y_coords)
-    # m.savefig(f"output/randomise/railmap-{str(now)}.jpg")
-    # m.show()
+    plt.savefig(f"output/greedy/railmap-{str(now)}.jpg")
+    plt.show()
 
 
     
@@ -66,6 +66,6 @@ def visualise_scores(scores):
     plt.xlabel("Score on objective function")
     plt.ylabel("Frequency")
     plt.title(f"Distribution of scores with random for {len(scores)} tries")
-    plt.savefig(f"output/randomise/histogram-{str(now)}.jpg")
+    plt.savefig(f"output/greedy/histogram-{str(now)}.jpg")
     print(f"saved file as histogram-{now}")
     plt.show()
