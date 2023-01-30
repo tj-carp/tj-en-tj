@@ -27,10 +27,11 @@ def visualise(railmap, connections, algorithm):
     map.plot([53, 54, 55, 56], [3,4,5,6], color="r")
 
     # maps the connections
+    x_route_map = []
+    y_route_map = []
+
     for connection in connections:
         connection = connections[connection]
-        x_route_map = []
-        y_route_map = []
         x_route_map.append(connection.station1.coords[1])
         y_route_map.append(connection.station1.coords[0])
         x_route_map.append(connection.station2.coords[1])
@@ -56,7 +57,7 @@ def visualise(railmap, connections, algorithm):
     # visualise and save output
     now = str(datetime.now())
     print(f"saved file as railmap-{now}")
-    map.scatter(x_coords, y_coords)
+    map.scatter(x_route_map, y_route_map)
     plt.savefig(f"output/{algorithm}/railmap-{str(now)}.jpg")
     plt.show()
 
