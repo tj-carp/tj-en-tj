@@ -38,19 +38,19 @@ if __name__ == "__main__":
         "[Please note that this option will take at least 3 hours to run] ")
     alg_choice = input("Type here: ")
 
-    if alg_choice == '1' or '4':
+    if alg_choice == '1' or alg_choice == '4':
         randomise = randomise.Randomise(connections)
         randomise.run()
-    if alg_choice == '2' or '4':
+    if alg_choice == '2' or alg_choice == '4':
         greedy_railmap = greedy.create_railmap(connections)
         score = greedy_railmap.score()
         visualise(greedy_railmap, connections)
-    if alg_choice == '3' or '4':
+    if alg_choice == '3' or alg_choice == '4':
         print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
         start_choice = input("Type here: ")
         hillclimber = hillclimber.HillClimber(connections, start_choice)
         hillclimber.create_railmap()
-    else:
+    elif alg_choice not in ['1', '2', '3', '4']:
         print("you have bungled it")
         exit(1)
 

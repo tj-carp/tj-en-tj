@@ -15,7 +15,7 @@ class Randomise():
         # for best railmap
         self.scores = []
         self.railmaps = {}
-        self.tries = 100000 if len(self.connections) == 28 else 10000
+        self.tries = 1000 if len(self.connections) == 28 else 10000
 
     def create_railmap(self):
         # create empty railmap
@@ -48,7 +48,9 @@ class Randomise():
             self.railmaps.update({score : random_railmap})
             self.scores.append(score)
 
-        max_score = deepcopy(self.scores.sort()[(len(self.scores) - 1)])
+        scores_copy = deepcopy(self.scores)
+        scores_copy.sort()
+        max_score = scores_copy[(len(self.scores) - 1)]
 
         best_random = deepcopy(self.railmaps[max_score])
 
@@ -57,10 +59,10 @@ class Randomise():
     def run(self):
         self.create_best_railmap()
         
-        visualise_scores(self.scores)
+        visualise_scores(self.scores, "randomise")
         self.scores.sort()
 
-        max_score = self.scores.sort()[(len(self.scores) - 1)]
+        max_score = self.scores[(len(self.scores) - 1)]
         min_score = self.scores[0]
 
         result = f"\nAmount of runs: {self.tries} \n----------------------------------------------------------------\n"\
