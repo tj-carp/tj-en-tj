@@ -2,10 +2,6 @@ from code.classes.graph import Graph
 from code.visualisation.visualisation import visualise, visualise_scores
 from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
-from mpl_toolkits.basemap import Basemap
-import matplotlib.pyplot as plt
-import numpy as np
-
 
 
 if __name__ == "__main__":
@@ -49,7 +45,7 @@ if __name__ == "__main__":
         print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
         start_choice = input("Type here: ")
         hillclimber = hillclimber.HillClimber(connections, start_choice)
-        hillclimber.create_railmap()
+        hillclimber.run()
     elif alg_choice not in ['1', '2', '3', '4']:
         print("you have bungled it")
         exit(1)

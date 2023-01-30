@@ -1,5 +1,6 @@
 from copy import deepcopy
 from code.algorithms import randomise
+from code.visualisation.visualisation import visualise, visualise_scores
 import random
 import time
 
@@ -10,23 +11,26 @@ class HillClimber:
         self.connection_ids = [*range(1, len(self.connections) + 1)]
         # check whether holland or national map to determine minimum length of route
         self.min_length = 100 if len(self.connections) == 28 else 160
+        # 
         self.start = start_choice
         # track the scores for visualisation
         self.scores = []
+        self.best_score = 0
 
     def create_railmap(self):
         st = time.time()
         
         # create random railmap according to start choice
+        random_railmap = randomise.Randomise(self.connections)
+
         if self.start == 1:
-            random_railmap = randomise.create_railmap(self.connections)
+            random_railmap = random_railmap.create_railmap()
         else:
-            random_railmap = randomise.run(self.connections)        
+            random_railmap = random_railmap.create_best_railmap()       
        
         unused_ids = list(set(self.connection_ids) - set(random_railmap.visited))
 
-        best_score = random_railmap.score()
-        first_score = random_railmap.score()
+        self.best_score = random_railmap.score()
         better_railmap = deepcopy(random_railmap)
         best_railmap = deepcopy(random_railmap)
         new_railmap = deepcopy(random_railmap)
@@ -53,8 +57,8 @@ class HillClimber:
                 new_railmap.visited += new_route.ids
                 new_score = new_railmap.score()
                 self.scores.append(new_score)
-                if new_score > best_score:
-                    best_score = new_score
+                if new_score > self.best_score:
+                    self.best_score = new_score
                     best_railmap = deepcopy(new_railmap)
 
                 if i > 0:
@@ -63,12 +67,15 @@ class HillClimber:
                     new_railmap = deepcopy(random_railmap)
             
             better_railmap = deepcopy(best_railmap)
-            print(i, best_score)
+            #print(i, best_score)
 
-        print(first_score)
-        print(best_score)
-        et = time.time()
-        print (et-st)
+        # print(first_score)
+        # print(best_score)
+        # et = time.time()
+        # print (et-st)
+        return best_railmap
 
     def run(self):
-        pass
+        railmap = self.create_railmap()
+        print(railmap)
+        visualise_scores(self.scores, "hillclimber")
