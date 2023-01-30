@@ -16,10 +16,9 @@ def run(connections):
         scores.append(score)
 
     # visualise_scores(scores)
-    scores.sort()
 
-    max_score = scores[-1]
-    min_score = scores[0]
+    max_score = max(scores)
+    min_score = min(scores)
 
     result = f"\nAmount of runs: {tries} \n----------------------------------------------------------------\n"\
              f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(scores)/tries)}\n"\
@@ -28,9 +27,8 @@ def run(connections):
     print(result)
     
     #print(Counter(sum(tuple(map(lambda route: route.route,railmaps[max_score].routes)),[])))
-
-    visualise(railmaps[max_score], connections)
-    visualise_scores(scores)
+    
+    return railmaps[max_score]
 
 
 def extend_route(route, current_connection, railmap):
@@ -57,8 +55,8 @@ def create_route(route, current_station, current_connection, railmap, connection
         current_station = next_station(current_connection.station1, current_connection.station2)
         # print(current_station)
         current_connection = next_connection(current_station, route.route, connections_per_station) # connections_per_station[current_station][-1]
-        print(current_connection)
-        print(current_station)  
+        #print(current_connection)
+        #print(current_station)  
         if current_connection == None:
             break
         elif route.length + current_connection.distance >= route.max_length and current_connection.visited == False:
@@ -77,7 +75,7 @@ def create_route(route, current_station, current_connection, railmap, connection
     railmap.minutes += route.length         
     # print(railmap.minutes)
     railmap.routes.append(route)
-    print('railmap.routes', len(railmap.routes))
+    #print('railmap.routes', len(railmap.routes))
 
 def create_railmap(connections):
     
@@ -142,17 +140,64 @@ def create_railmap(connections):
 
     route_combinations = list(combinations(railmap.routes, 2))
 
-    chains = list()
+    #print("route_combinations", len(route_combinations))
 
-    for i, j in route_combinations:
-        chain = list()
-        for connect in i.route:
-            if connect in j.route:
-                chain.append(connect)
-            elif chain:
-                chains.append(chain)
+    # chains = list()
+
+    # for i, j in route_combinations:
+    #     chain = list()
+    #     for connect in i.route.copy():
+    #         if connect in j.route:
+    #             i.route
+    #             chain.append(connect)
+    #         elif chain:
+    #             chains.append(chain)
+
+
+    # removable_overlaps = dict(map(lambda chain: (tuple(chain),chains.count(chain)), chains))
+
+    # #print(f'removable_overlaps {i for i in removable_overlaps}')
     
-    # print('chains', dict(map(lambda connection: (connection[0],connection[-1]),set(chains))))
+    # # removers = list()
+    # for route in railmap.routes:
+    #     print('route.route',route.route)
+    #     for headtail in removable_overlaps:
+    #         index1 = 0
+    #         remover = list()
+    #         len_headtail = len(headtail)
+    #         for index1 in range(len(route.route)):
+    #             print(index1)
+    #             if route.route[index1] == headtail[0]:
+                    
+    #                 index2 = 0
+    #                 #remover.append(route.route[index1])
+    #                 print(len(route.route), len(headtail))
+    #                 while route.route[index1] == headtail[min(index2, len_headtail)]:
+    #                     print(index1, index2)
+    #                     remover.append(headtail[index2])
+    #                     index1 += 1
+    #                     index2 += 1
+    #                 #removers.append(remover)
+    #                 break
+    #             elif route.route[index1] == headtail[-1]:
+    #                 index2 = 0
+    #                 #remover.append(route.route[index1])
+    #                 while route.route[index1] == headtail[min(index2, len_headtail)]:
+    #                     remover.append(headtail[index2])
+    #                     index1 -= 1
+    #                     index2 += 1
+    #                 #removers.append(remover)
+    #                 break
+    #             #index1 += 1
+    #     route.route = list(filter(lambda connection: connection not in remover, route.route))
+    #     remover.clear()
+        
+        # for remover in removers:
+        #     route.remove()
+            
+            
+
+
 
     # splitter = lambda slice: sum(tuple(map(lambda connection: connection.distance, slice)))
 
