@@ -6,10 +6,15 @@ To evaluate our performance a objective function is given.
 ### K = P * 10.000 - (T * 100 + Min)
 
 where: 
+
 K = Total score of a particular solution
+
 P = (used connections / total connections)
+
 T = Amount of trajectories
+
 Min = Total time driven 
+
 
 To answer the main question we will not think of any solutions ourselfs. Instead we have to design algoritms which generate solutions for us. The first algorithm is designed to just produce a valid solution, randomly. but we can run it thousands of times and check which one was best. Other algorithms that we have included are a greedy algorithm. And a Hillclimber. 
 
