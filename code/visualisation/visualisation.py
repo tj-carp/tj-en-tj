@@ -65,7 +65,7 @@ def visualise_scores(scores, algorithm):
     """
     creates a histogram of distribution of scores
     """
-    
+
     # used to create unique outputs
     now = str(datetime.now())
 
@@ -82,3 +82,7 @@ def visualise_scores(scores, algorithm):
     plt.savefig(f"output/{algorithm}/histogram-{str(now)}.jpg")
     print(f"saved file as histogram-{now}")
     plt.show()
+
+
+
+
