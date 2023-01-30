@@ -3,7 +3,7 @@ from mpl_toolkits.basemap import Basemap
 import numpy as np 
 from datetime import datetime
 
-def visualise(railmap, connections):
+def visualise(railmap, connections, algorithm):
 
     map = Basemap(projection='merc',
                     llcrnrlat=50.5,
@@ -53,7 +53,7 @@ def visualise(railmap, connections):
     now = str(datetime.now())
     print(f"saved file as railmap-{now}")
     map.scatter(x_coords, y_coords)
-    plt.savefig(f"output/greedy/railmap-{str(now)}.jpg")
+    plt.savefig(f"output/{algorithm}/railmap-{str(now)}.jpg")
     plt.show()
 
     
