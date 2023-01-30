@@ -43,7 +43,7 @@ class Randomise():
 
     def create_best_railmap(self):
         for i in range(self.tries):
-            random_railmap = create_railmap(self.connections)
+            random_railmap = self.create_railmap()
             score = random_railmap.score()
             self.railmaps.update({score : random_railmap})
             self.scores.append(score)
