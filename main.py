@@ -48,9 +48,8 @@ if __name__ == "__main__":
         randomise = randomise.Randomise(connections, tries)
         randomise.run()
     if alg_choice == '2' or alg_choice == '4':
-        greedy_railmap = greedy.create_railmap(connections)
-        score = greedy_railmap.score()
-        visualise(greedy_railmap, connections)
+        greedy_railmap = greedy.run(connections)
+        visualise(greedy_railmap, connections, 'greedy')
     if alg_choice == '3' or alg_choice == '4':
         print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
         start_choice = input("Type here: ")
