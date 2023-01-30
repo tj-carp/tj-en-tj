@@ -15,7 +15,6 @@ def create_railmap(connections):
 
     best_score = random_railmap.score()
     first_score = random_railmap.score()
-    print(best_score)
     better_railmap = deepcopy(random_railmap)
     best_railmap = deepcopy(random_railmap)
     new_railmap = deepcopy(random_railmap)
