@@ -3,7 +3,9 @@ RailNL is a case for the course Algorithms and Heuristics. The case is centered 
 
 To evaluate our performance a objective function is given. 
 
-### K = P * 10.000 - (T * 100 + Min)
+```
+K = P * 10.000 - (T * 100 + Min)
+```
 
 where: 
 
