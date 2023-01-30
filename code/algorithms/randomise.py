@@ -4,7 +4,7 @@ import random
 from copy import deepcopy
 
 class Randomise():
-    def __init__(self, connections):
+    def __init__(self, connections, tries):
         self.connections = connections
         # create connections ids list
         self.connection_ids = [*range(1, len(self.connections) + 1)]
@@ -15,7 +15,7 @@ class Randomise():
         # for best railmap
         self.scores = []
         self.railmaps = {}
-        self.tries = 1000 if len(self.connections) == 28 else 10000
+        self.tries = tries
 
     def create_railmap(self):
         # create empty railmap
@@ -71,4 +71,4 @@ class Randomise():
                 f"{self.railmaps[max_score]}"
         
         print(result)
-        visualise(self.railmaps[max_score], self.connections)
+        visualise(self.railmaps[max_score], self.connections, "randomise")
