@@ -6,20 +6,32 @@ import time
 
 
 class HillClimber:
-    def __init__(self, connections, start_choice):
+    """
+    HillClimber class in which a new random route is created for i iterations and
+    checked against existing routes in a random railmap - the best swap will be chosen 
+    and the next iteration will be executed according to the improved railmap or remain
+    the same if no improvements on score are made
+    """
+    def __init__(self, connections, start_choice, tries):
         self.connections = connections
         self.connection_ids = [*range(1, len(self.connections) + 1)]
         # check whether holland or national map to determine minimum length of route
         self.min_length = 100 if len(self.connections) == 28 else 160
-        # 
         self.start = start_choice
         # track the scores for visualisation
         self.scores = []
+        self.initial_score = 0
         self.best_score = 0
+        self.tries = tries
+        #10000 if len(self.connections) == 28 else 1000
 
     def create_railmap(self):
+        """
+        Instantiates a random railmap to begin with and creates new random routes for 
+        possible improvement for i tries
+        """
         st = time.time()
-        
+
         # create random railmap according to start choice
         random_railmap = randomise.Randomise(self.connections)
 
@@ -27,15 +39,19 @@ class HillClimber:
             random_railmap = random_railmap.create_railmap()
         else:
             random_railmap = random_railmap.create_best_railmap()       
-       
+
+        # if there are any unused connections collect them in a list
         unused_ids = list(set(self.connection_ids) - set(random_railmap.visited))
 
+        # begin all values with (the score of) the railmap just created
+        self.first_score = random_railmap.score()
         self.best_score = random_railmap.score()
         better_railmap = deepcopy(random_railmap)
         best_railmap = deepcopy(random_railmap)
         new_railmap = deepcopy(random_railmap)
 
-        for i in range(1000):
+
+        for i in range(self.tries):
             # create a new random route of anywhere between 100 or 160 and 120 or 180 minutes
             new_route = random_railmap.create_route()
 
@@ -48,7 +64,7 @@ class HillClimber:
                     random_connection = random.choice(self.connection_ids)            
                     new_route.add_connection(random_connection)
 
-            # check against existing routes and swap with existing route that gives biggest score gain
+            # check each existing route to see if swapping for new route gives score gain
             for j, route in enumerate(new_railmap.routes):
                 new_railmap.minutes -= route.length
                 new_railmap.visited = list(set(new_railmap.visited) - set(route.ids))
@@ -57,25 +73,31 @@ class HillClimber:
                 new_railmap.visited += new_route.ids
                 new_score = new_railmap.score()
                 self.scores.append(new_score)
+                # save the swap with best score gain
                 if new_score > self.best_score:
                     self.best_score = new_score
                     best_railmap = deepcopy(new_railmap)
-
+                # after the first iteration, check against previous iteration's railmap
                 if i > 0:
                     new_railmap = deepcopy(better_railmap)
                 else:
                     new_railmap = deepcopy(random_railmap)
             
+            # save previous iteration's result in case improved
             better_railmap = deepcopy(best_railmap)
-            #print(i, best_score)
+            print(i, self.best_score)
 
-        # print(first_score)
-        # print(best_score)
-        # et = time.time()
-        # print (et-st)
+        et = time.time()
+        print (et-st)
         return best_railmap
 
     def run(self):
         railmap = self.create_railmap()
-        print(railmap)
+        result = f"\nAmount of runs: {self.tries} \n----------------------------------------------------------------\n"\
+        f"initial score: {self.first_score}, end score: {self.best_score}\n"\
+        f"----------------------------------------------------------------\n\n"\
+        f"{railmap}"
+        
+        print(result)
+        visualise(railmap, self.connections, "hillclimber")
         visualise_scores(self.scores, "hillclimber")
