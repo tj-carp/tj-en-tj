@@ -29,8 +29,8 @@ class HillClimber:
 
     def create_railmap(self):
         """
-        Instantiates a random railmap to begin with and creates new random routes for 
-        possible improvement for i tries
+        Instantiates a random railmap according to input to begin with and 
+        creates new random routes for possible improvement for i tries
         """
         st = time.time()
 

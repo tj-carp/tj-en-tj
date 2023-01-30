@@ -37,33 +37,45 @@ if __name__ == "__main__":
         print("You have given invalid input. Please choose either '1' or '2' or '3' or '4'")
         alg_choice = input("Type here: ")
 
+    # --------------------------- Randomise ------------------------------------
     if alg_choice == '1' or alg_choice == '4':
         print("\nHow many times iterations do you want randomise to run?\nPlease note that fewer than 1000 tries may give subpar results "\
         "and more than 100.000 tries may take a while or forever")
         tries = input("Type here: ")
+
         while not tries.isdigit():
             print("You have given invalid input. Please choose a positive integer")
             tries = input("Type here: ")
         tries = int(tries)
+
         randomise = randomise.Randomise(connections, tries)
+        print(f"Running randomise {tries} times...")
         randomise.run()
+    # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
+        print("Running greedy ...")
         greedy_railmap = greedy.create_railmap(connections)
         score = greedy_railmap.score()
-        visualise(greedy_railmap, connections)
+        visualise(greedy_railmap, connections, "greedy")
+    # --------------------------- Hill Climber ---------------------------------
     if alg_choice == '3' or alg_choice == '4':
         print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
         start_choice = input("Type here: ")
+
         while start_choice not in ['1', '2']:
             print("You have given invalid input. Please choose either '1' or '2'")
             start_choice = input("Type here: ")
+
         print("\nHow many times iterations do you want hillclimber to run?\nPlease note that fewer than 10 tries may give subpar results "\
         "and more than 10.000 tries may take a while or forever")
         tries = input("Type here: ")
+
         while not tries.isdigit():
             print("You have given invalid input. Please choose a positive integer")
             tries = input("Type here: ")
         tries = int(tries)
+
         hillclimber = hillclimber.HillClimber(connections, start_choice, tries)
+        print(f"Running hillclimber {tries} times...")
         hillclimber.run()
     
