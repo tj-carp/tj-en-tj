@@ -11,8 +11,8 @@ import numpy as np
 if __name__ == "__main__":
 
     # check command line arguments
-    if len(argv) not in [1]:
-        print("Usage: python3 main.py")
+    if len(argv) not in [1, 2]:
+        print("Usage: python3 main.py [area]")
         exit(1)
     # request input to determine map name
     print("For Holland, type 1 \nFor The Netherlands, type 2")

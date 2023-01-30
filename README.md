@@ -1,6 +1,22 @@
 # RailNL
-This is the repository for our RailNL project, explained here:
+RailNL is a case for the course Algorithms and Heuristics. The case is centered around making a planning of train trajectories in the Netherlands. We've been given a set of coordinates of all the train stations in NL, as well as a list of which stations have a connection with eachother. With this wwe have received the objective to try and make an efficient railmap where all stations are connected with eachother, and the trains ride in a trajectory which is well planned. 
 
+To evaluate our performance a objective function is given. 
+
+### K = P * 10.000 - (T * 100 + Min)
+
+where: 
+
+K = Total score of a particular solution
+
+P = (used connections / total connections)
+
+T = Amount of trajectories
+
+Min = Total time driven 
+
+
+To answer the main question we will not think of any solutions ourselfs. Instead we have to design algoritms which generate solutions for us. The first algorithm is designed to just produce a valid solution, randomly. but we can run it thousands of times and check which one was best. Other algorithms that we have included are a greedy algorithm. And a Hillclimber. 
 
 ## Get started!
 ### Requirements

@@ -19,8 +19,8 @@ def visualise(railmap, connections):
     map.drawparallels(np.arange(-90, 90, 30))
     map.plot([53, 54, 55, 56], [3,4,5,6], color="r")
 
-    x_coords_map = []
-    y_coords_map = []
+    # x_coords_map = []
+    # y_coords_map = []
 
     for connection in connections:
         connection = connections[connection]
@@ -56,16 +56,23 @@ def visualise(railmap, connections):
     plt.savefig(f"output/greedy/railmap-{str(now)}.jpg")
     plt.show()
 
-
     
-def visualise_scores(scores):
+def visualise_scores(scores, algorithm):
 
     now = str(datetime.now())
 
     plt.hist(scores, bins=50)
     plt.xlabel("Score on objective function")
     plt.ylabel("Frequency")
-    plt.title(f"Distribution of scores with random for {len(scores)} tries")
-    plt.savefig(f"output/greedy/histogram-{str(now)}.jpg")
+    if algorithm == "randomise":
+         plt.title(f"Distribution of scores with random for {len(scores)} tries")
+    else:
+        plt.title(f"Distribution of scores")
+   
+    plt.savefig(f"output/{algorithm}/histogram-{str(now)}.jpg")
+    # if algorithm == 1:
+    #     plt.savefig(f"output/random/histogram-{str(now)}.jpg")
+    # if algorithm == 2:
+    #     plt.savefig(f"output/greedy/histogram-{str(now)}.jpg")
     print(f"saved file as histogram-{now}")
     plt.show()
