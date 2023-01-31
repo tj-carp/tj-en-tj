@@ -47,10 +47,12 @@ if __name__ == "__main__":
             print("You have given invalid input. Please choose a positive integer")
             tries = input("Type here: ")
         tries = int(tries)
-
         randomise = randomise.Randomise(connections, tries)
+
         print(f"Running randomise {tries} times...")
+        
         randomise.run()
+        
     # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
         print("Running greedy ...")

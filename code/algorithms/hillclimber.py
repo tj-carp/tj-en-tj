@@ -1,6 +1,6 @@
 from copy import deepcopy
 from code.algorithms import randomise
-from code.visualisation.visualisation import visualise, visualise_scores
+from code.visualisation.visualisation import visualise, visualise_scores, progress_HC 
 from matplotlib import pyplot as plt
 import random
 from datetime import datetime
@@ -101,22 +101,11 @@ class HillClimber:
         f"{railmap}"
         
         print(result)
-        self.visualise_HC()
+        progress_HC(self.scores, self.tries)
         visualise(railmap, self.connections, "hillclimber")
     
 
-    def visualise_HC(self):
-        x = [i for i in range(self.tries)]
-        y = [max(self.scores[:i+1]) for i in range(self.tries)]
-        now = str(datetime.now())
-        plt.plot(x, y)
-        plt.xlabel("Number of tries")
-        plt.ylabel("Best score")
-        plt.ylim(2000, 10000)
-        plt.title("Progress of Hill Climber")
-        plt.savefig(f"output/hillclimber/progress of hillclimber-{now}.jpg")
-        print(f"output saved as progress of hillclimber-{now}.jpg")
-        plt.show()
+
 
         
 

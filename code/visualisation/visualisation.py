@@ -84,6 +84,31 @@ def visualise_scores(scores, algorithm):
     print(f"saved file as histogram-{now}")
     plt.show()
 
+def progress_HC(scores, tries):
+    x = [i for i in range(tries)]
+    y = [max(scores[:i+1]) for i in range(tries)]
+    now = str(datetime.now())
+    plt.plot(x, y)
+    plt.xlabel("Number of tries")
+    plt.ylabel("Best score")
+    plt.ylim(2000, 10000)
+    plt.title("Progress of Hill Climber")
+    plt.savefig(f"output/hillclimber/progress of hillclimber-{now}.jpg")
+    print(f"output saved as progress of hillclimber-{now}.jpg")
+    plt.show()
+
+def progress_random(scores, tries):
+    x = [i for i in range(tries)]
+    y = [max(scores[:i+1]) for i in range(tries)]
+    now = str(datetime.now())
+    plt.plot(x, y)
+    plt.xlabel("Number of tries")
+    plt.ylabel("Best score")
+    plt.ylim(2000, 10000)
+    plt.title("Progress of Randomise")
+    plt.savefig(f"output/randomise/progress of randomise-{now}.jpg")
+    print(f"output saved as progress of randomise-{now}.jpg")
+    plt.show()
 
 
 
