@@ -3,6 +3,7 @@ from code.algorithms import randomise
 from code.visualisation.visualisation import visualise, visualise_scores, progress_HC 
 from matplotlib import pyplot as plt
 import random
+from tqdm import tqdm
 from datetime import datetime
 import time
 
@@ -53,7 +54,7 @@ class HillClimber:
         new_railmap = deepcopy(random_railmap)
 
 
-        for i in range(self.tries):
+        for i in tqdm(range(self.tries)):
             # create a new random route of anywhere between 100 or 160 and 120 or 180 minutes
             new_route = random_railmap.create_route()
 
@@ -87,10 +88,10 @@ class HillClimber:
             
             # save previous iteration's result in case improved
             better_railmap = deepcopy(best_railmap)
-            print(i, self.best_score)
+            # print(i, self.best_score)
 
         et = time.time()
-        print (et-st)
+        # print (et-st)
         return best_railmap
 
     def run(self):
@@ -99,7 +100,7 @@ class HillClimber:
         f"initial score: {self.first_score}, end score: {self.best_score}\n"\
         f"----------------------------------------------------------------\n\n"\
         f"{railmap}"
-        
+
         self.save_output(result)
         print(result)
         
@@ -107,13 +108,7 @@ class HillClimber:
         visualise(railmap, self.connections, "hillclimber")
 
     def save_output(self, result):
-        now = str(datetime.now())
-        f = open("output/hillclimber/output-{now}.txt", 'w+')
+        ey = str(datetime.now())
+        f = open(f"output/hillclimber/output-{ey}.txt", 'w+')
         f.write(result)
         f.close()
-    
-
-
-
-        
-

@@ -111,4 +111,3 @@ def progress_random(scores, tries):
     plt.show()
 
 
-

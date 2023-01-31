@@ -4,6 +4,7 @@ import random
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 from datetime import datetime
+import time
 from copy import deepcopy
 
 class Randomise():
@@ -45,7 +46,8 @@ class Randomise():
         return railmap
 
     def create_best_railmap(self):
-        for i in range(self.tries):
+        
+        for item in tqdm(range(self.tries)):
             random_railmap = self.create_railmap()
             score = random_railmap.score()
             self.railmaps.update({score : random_railmap})
@@ -61,7 +63,7 @@ class Randomise():
 
     def run(self):
         self.create_best_railmap()
-        
+            
         visualise_scores(self.scores, "randomise")
         self.scores.sort()
 
@@ -75,11 +77,10 @@ class Randomise():
         self.save_output(result)
         print(result)
         visualise(self.railmaps[max_score], self.connections, "randomise")
-        progress_random(self.scores, self.tries)
 
     def save_output(self, result):
         now = str(datetime.now())
-        f = open("output/randomise/output-{now}.txt", 'w+')
+        f = open(f"output/randomise/output-{now}.txt", 'w+')
         f.write(result)
         f.close()
 
