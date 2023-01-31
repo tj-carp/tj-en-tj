@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
 import numpy as np 
 from datetime import datetime
+import os
 
-def visualise(railmap, connections, algorithm):
+def visualise(railmap, connections, output_folder):
     """
     creates a map of the netherlands
     Reads all connections given as an argument
@@ -56,45 +57,38 @@ def visualise(railmap, connections, algorithm):
 
     # visualise and save output
     now = str(datetime.now())
-    print(f"saved file as railmap-{now}")
+    print(f"saved file as railmap")
     map.scatter(x_route_map, y_route_map)
-    plt.savefig(f"output/{algorithm}/railmap-{str(now)}.jpg")
+    plt.savefig(f"{output_folder}/railmap.png")
     plt.show()
 
     
-def visualise_scores(scores, algorithm):
+def visualise_scores(scores, output_folder):
     """
     creates a histogram of distribution of scores
     """
-
-    # used to create unique outputs
-    now = str(datetime.now())
 
     # make histogram
     plt.hist(scores, bins=50)
     plt.xlabel("Score on objective function")
     plt.ylabel("Frequency")
-    if algorithm == "randomise":
-         plt.title(f"Distribution of scores with random for {len(scores)} tries")
-    else:
-        plt.title(f"Distribution of scores")
+    plt.title(f"Distribution of scores")
 
     # save output
-    plt.savefig(f"output/{algorithm}/histogram-{str(now)}.jpg")
-    print(f"saved file as histogram-{now}")
+    plt.savefig(f"{output_folder}/histogram.png")
+    print(f"saved file as histogram")
     plt.show()
 
-def vis_progress(scores, tries, algorithm):
+def vis_progress(scores, tries, output_folder):
     x = [i for i in range(tries)]
     y = [max(scores[:i+1]) for i in range(tries)]
-    now = str(datetime.now())
     plt.plot(x, y)
     plt.xlabel("Number of tries")
     plt.ylabel("Best score")
     plt.ylim(2000, 10000)
-    plt.title(f"Progress of {algorithm}")
-    plt.savefig(f"output/{algorithm}/progress of {algorithm}-{now}.jpg")
-    print(f"output saved as progress of {algorithm}-{now}.jpg")
+    plt.title(f"Progress of scores")
+    plt.savefig(f"{output_folder}/progress.png")
+    print(f"output saved as progress")
     plt.show()
 
 def run_visualise(railmap, connections, algorithm, scores, tries, result):
@@ -102,14 +96,19 @@ def run_visualise(railmap, connections, algorithm, scores, tries, result):
     calls all visualisation functions
     """
 
-    visualise(railmap, connections, algorithm)
-    visualise_scores(scores, algorithm)
-    vis_progress(scores, tries, algorithm)
-    save_output(result, algorithm)
-
-
-def save_output(result, algorithm):
     now = str(datetime.now())
-    f = open(f"output/{algorithm}/output-{now}.txt", 'w+')
+    output_folder = f"output/{algorithm}/{now}"
+
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    visualise(railmap, connections, output_folder)
+    visualise_scores(scores, output_folder)
+    vis_progress(scores, tries, output_folder)
+    save_output(result, output_folder)
+
+def save_output(result, output_folder):
+    now = str(datetime.now())
+    f = open(f"{output_folder}/output.txt", 'w+')
     f.write(result)
     f.close()
