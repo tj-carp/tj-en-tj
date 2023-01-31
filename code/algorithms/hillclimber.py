@@ -4,7 +4,6 @@ from code.visualisation.visualisation import run_visualise
 from matplotlib import pyplot as plt
 import random
 from tqdm import tqdm
-import time
 
 class HillClimber:
     """
@@ -31,8 +30,6 @@ class HillClimber:
         Instantiates a random railmap according to input to begin with and 
         creates new random routes for possible improvement for i tries
         """
-        st = time.time()
-
         # create random railmap according to start choice
         random_railmap = randomise.Randomise(self.connections, 1000)
 
@@ -86,10 +83,7 @@ class HillClimber:
             
             # save previous iteration's result in case improved
             better_railmap = deepcopy(best_railmap)
-            # print(i, self.best_score)
 
-        et = time.time()
-        # print (et-st)
         return best_railmap
 
     def run(self):

@@ -15,6 +15,7 @@ class Randomise():
         self.min_length = 100 if len(self.connections) == 28 else 160
         # for best railmap
         self.scores = []
+        self.sorted_scores = []
         self.railmaps = {}
         self.tries = tries
 
@@ -35,7 +36,7 @@ class Randomise():
                 except:
                     random_connection = random.randint(1, len(self.connections))            
                     route.add_connection(random_connection)
-                
+    
             railmap.minutes += route.length
             railmap.visited += route.ids
             railmap.routes.append(route)
@@ -43,35 +44,39 @@ class Randomise():
         return railmap
 
     def create_best_railmap(self):
-        
+        """
+        Function to run randomise tries amount of times to increase chances of good random railmap
+        """
+        # show progress bar and run randomise tries amount of times
         for item in tqdm(range(self.tries)):
             random_railmap = self.create_railmap()
             score = random_railmap.score()
             self.railmaps.update({score : random_railmap})
             self.scores.append(score)
 
-        scores_copy = deepcopy(self.scores)
-        scores_copy.sort()
-        max_score = scores_copy[(len(self.scores) - 1)]
+        # sort scores to find highest score
+        self.sorted_scores = deepcopy(self.scores)
+        self.sorted_scores.sort()
+        max_score = self.sorted_scores[(len(self.sorted_scores) - 1)]
 
+        # use highest score to find best railmap
         best_random = deepcopy(self.railmaps[max_score])
 
         return best_random
 
     def run(self):
-        self.create_best_railmap()
-        self.scores.sort()
+        best_random = self.create_best_railmap()
 
-        max_score = self.scores[(len(self.scores) - 1)]
-        min_score = self.scores[0]
+        max_score = self.sorted_scores[(len(self.sorted_scores) - 1)]
+        min_score = self.sorted_scores[0]
 
         result = f"\nAmount of runs: {self.tries} \n----------------------------------------------------------------\n"\
                 f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(self.scores)/self.tries)}\n"\
                 f"----------------------------------------------------------------\n\n"\
-                f"{self.railmaps[max_score]}"
+                f"{best_random}"
 
         print(result)
 
-        run_visualise(self.railmaps[max_score], self.connections, "randomise", self.scores, self.tries, result)
+        run_visualise(best_random, self.connections, "randomise", self.scores, self.tries, result)
 
 
