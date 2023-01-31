@@ -1,8 +1,7 @@
 from code.classes.graph import Graph
-from code.visualisation.visualisation import visualise, visualise_scores
+from code.visualisation.visualisation import visualise
 from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
-
 
 if __name__ == "__main__":
 
