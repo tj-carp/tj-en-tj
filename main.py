@@ -11,6 +11,7 @@ if __name__ == "__main__":
     # request valid input to determine map name
     print("1 Holland \n2 The Netherlands")
     map_choice = input("Type here: ")
+
     while map_choice not in ['1', '2']:
             print("You have given invalid input. Please choose either '1' or '2'")
             map_choice = input("Type here: ")
@@ -31,6 +32,7 @@ if __name__ == "__main__":
     print("\nWhich algorithm do you want to run?\n1 Randomise\n2 Greedy\n3 Hillclimber\n4 Run all algorithms \n"\
         "Please note that if you chose The Netherlands, options 3 and 4 will take at least 3 hours to run ")
     alg_choice = input("Type here: ")
+
     while alg_choice not in ['1', '2', '3', '4']:
         print("You have given invalid input. Please choose either '1' or '2' or '3' or '4'")
         alg_choice = input("Type here: ")
@@ -80,5 +82,6 @@ if __name__ == "__main__":
 
         hillclimber = hillclimber.HillClimber(connections, start_choice, tries)
         print(f"Running hillclimber {tries} times...")
+        
         hillclimber.run()
     
