@@ -56,9 +56,7 @@ if __name__ == "__main__":
     # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
         print("Running greedy ...")
-        greedy_railmap = greedy.create_railmap(connections)
-        score = greedy_railmap.score()
-        visualise(greedy_railmap, connections, "greedy")
+        greedy_railmap = greedy.run(connections)
     # --------------------------- Hill Climber ---------------------------------
     if alg_choice == '3' or alg_choice == '4':
         print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
