@@ -1,12 +1,11 @@
 class Route:
-    
     def __init__(self, connections):
         self.connections = connections
         self.route = []
         self.ids = []
         self.current_connection = 0
         self.length = 0
-        # check whether holland or national map to determine maximum and minimum allowed route length
+        # check whether holland or national map to determine maximum and minimum allowed route length in minutes
         self.max_length = 120 if len(connections) == 28 else 180
 
     def add_connection(self, connection_id):
@@ -18,7 +17,7 @@ class Route:
         # check if connection is first in route
         if not self.route:
             self.route.append(connection)
-            connection.set_visited()
+            connection.visited = True
             self.length += connection.distance
             self.ids.append(connection_id)
             self.current_connection = connection
@@ -33,7 +32,7 @@ class Route:
 
         # add station and make it the current station in the route
         self.route.append(connection)
-        connection.set_visited()
+        connection.visited = True
         self.length += connection.distance
         self.ids.append(connection_id)
         self.current_connection = connection
