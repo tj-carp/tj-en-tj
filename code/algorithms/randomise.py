@@ -1,5 +1,5 @@
 from code.classes.railmap import RailMap
-from code.visualisation.visualisation import visualise, visualise_scores, progress_random
+from code.visualisation.visualisation import run_visualise
 import random
 from tqdm import tqdm
 from matplotlib import pyplot as plt
@@ -63,8 +63,6 @@ class Randomise():
 
     def run(self):
         self.create_best_railmap()
-            
-        visualise_scores(self.scores, "randomise")
         self.scores.sort()
 
         max_score = self.scores[(len(self.scores) - 1)]
@@ -74,13 +72,9 @@ class Randomise():
                 f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(self.scores)/self.tries)}\n"\
                 f"----------------------------------------------------------------\n\n"\
                 f"{self.railmaps[max_score]}"
-        self.save_output(result)
+                
         print(result)
-        visualise(self.railmaps[max_score], self.connections, "randomise")
 
-    def save_output(self, result):
-        now = str(datetime.now())
-        f = open(f"output/randomise/output-{now}.txt", 'w+')
-        f.write(result)
-        f.close()
+        run_visualise(self.railmaps[max_score], self.connections, "randomise", self.scores, self.tries, result)
+
 

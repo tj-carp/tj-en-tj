@@ -110,7 +110,7 @@ def progress_random(scores, tries):
     print(f"output saved as progress of randomise-{now}.jpg")
     plt.show()
 
-def run_visualise(railmap, connections, algorithm, scores, tries):
+def run_visualise(railmap, connections, algorithm, scores, tries, result):
     """
     calls all visualisation functions
     """
@@ -118,4 +118,11 @@ def run_visualise(railmap, connections, algorithm, scores, tries):
     visualise(railmap, connections, algorithm)
     visualise_scores(scores, algorithm)
     progress_random(scores, tries)
+    save_output(result, algorithm)
 
+
+def save_output(result, algorithm):
+    now = str(datetime.now())
+    f = open(f"output/{algorithm}/output-{now}.txt", 'w+')
+    f.write(result)
+    f.close()

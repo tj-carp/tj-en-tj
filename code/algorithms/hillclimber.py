@@ -7,7 +7,6 @@ from tqdm import tqdm
 from datetime import datetime
 import time
 
-
 class HillClimber:
     """
     HillClimber class in which a new random route is created for i iterations and
@@ -101,13 +100,6 @@ class HillClimber:
         f"----------------------------------------------------------------\n\n"\
         f"{railmap}"
 
-        self.save_output(result)
         print(result)
 
-        run_visualise(railmap, self.connections, "hillclimber", self.scores, self.tries)
-
-    def save_output(self, result):
-        ey = str(datetime.now())
-        f = open(f"output/hillclimber/output-{ey}.txt", 'w+')
-        f.write(result)
-        f.close()
+        run_visualise(railmap, self.connections, "hillclimber", self.scores, self.tries, result)
