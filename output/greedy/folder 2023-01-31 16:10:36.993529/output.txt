@@ -1,0 +1,16 @@
+
+Amount of runs: 1 
+----------------------------------------------------------------
+score: 7071
+----------------------------------------------------------------
+
+Railmap: 
+1 Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Schiphol Airport
+2 Alkmaar - Den Helder, Castricum - Alkmaar, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal
+3 Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Den Haag Centraal - Gouda
+4 Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Den Haag Centraal - Gouda, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport
+5 Alkmaar - Hoorn, Zaandam - Hoorn, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum
+6 Leiden Centraal - Alphen a/d Rijn, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal
+7 Haarlem - Beverwijk, Beverwijk - Castricum, Castricum - Alkmaar, Alkmaar - Hoorn, Zaandam - Hoorn, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Schiphol Airport
+Its total length is 800 minutes
+Its score is 7071

@@ -1,0 +1,22 @@
+
+Amount of runs: 1000 
+----------------------------------------------------------------
+initial score: 4450, end score: 5383
+----------------------------------------------------------------
+
+Railmap: 
+1 Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Dordrecht - Rotterdam Blaak, Dordrecht - Rotterdam Centraal, Dordrecht - Rotterdam Blaak, Breda - Dordrecht, Tilburg - Breda, Tilburg - Breda, s-Hertogenbosch - Tilburg, s-Hertogenbosch - Oss, Oss - Nijmegen, Nijmegen - Arnhem Centraal
+2 Den Haag HS - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Den Haag HS - Leiden Centraal, Den Haag HS - Gouda, Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Haarlem - Beverwijk, Haarlem - Beverwijk, Zaandam - Beverwijk, Amsterdam Sloterdijk - Zaandam
+3 Apeldoorn - Zutphen, Deventer - Zutphen, Deventer - Apeldoorn, Deventer - Almelo, Zwolle - Deventer, Zwolle - Amersfoort, Zwolle - Almelo
+4 Schiedam Centrum - Delft, Delft - Den Haag HS, Delft - Den Haag Laan v NOI, Delft - Den Haag Centraal, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Rotterdam Blaak - Rotterdam Alexander, Dordrecht - Rotterdam Blaak, Roosendaal - Dordrecht, Etten-Leur - Roosendaal, Etten-Leur - Roosendaal, Etten-Leur - Roosendaal
+5 Leeuwarden - Heerenveen, Heerenveen - Steenwijk, Steenwijk - Zwolle, Steenwijk - Zwolle, Zwolle - Almelo, Assen - Zwolle
+6 Arnhem Centraal - Ede-Wageningen, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Gouda, Gouda - Alphen a/d Rijn, Den Haag HS - Gouda, Delft - Den Haag HS, Delft - Den Haag Laan v NOI, Schiedam Centrum - Delft, Delft - Den Haag HS, Schiedam Centrum - Delft, Delft - Den Haag Laan v NOI, Delft - Den Haag Centraal, Delft - Den Haag Laan v NOI
+7 Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Hilversum, Utrecht Centraal - Hilversum, Utrecht Centraal - Hilversum, Amsterdam Amstel - Hilversum, Amsterdam Amstel - Hilversum, Hilversum - Almere Centrum, Almere Centrum - Lelystad Centrum
+8 Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Alexander - Gouda, Utrecht Centraal - Gouda, Utrecht Centraal - Hilversum, Utrecht Centraal - Amersfoort, Utrecht Centraal - Hilversum, Amsterdam Amstel - Hilversum
+9 Zutphen - Dieren, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Zutphen - Dieren, Deventer - Zutphen, Deventer - Zutphen, Deventer - Almelo, Zwolle - Almelo, Almelo - Hengelo, Hengelo - Enschede, Almelo - Hengelo
+10 Zaandam - Beverwijk, Beverwijk - Castricum, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Centraal
+11 Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Amsterdam Centraal
+12 Helmond - Venlo, Eindhoven - Helmond, Weert - Eindhoven, Roermond - Weert, Sittard - Roermond, Sittard - Roermond, Maastricht - Sittard, Sittard - Heerlen, Sittard - Roermond, Maastricht - Sittard, Sittard - Heerlen
+13 Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Hilversum, Amsterdam Amstel - Amsterdam Centraal, Utrecht Centraal - Amsterdam Amstel, Amsterdam Amstel - Hilversum, Amsterdam Amstel - Almere Centrum, Amsterdam Centraal - Almere Centrum, Almere Centrum - Lelystad Centrum, Amsterdam Centraal - Almere Centrum
+Its total length is 2193 minutes
+Its score is 5383

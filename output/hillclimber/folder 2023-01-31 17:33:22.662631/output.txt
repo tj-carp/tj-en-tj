@@ -1,0 +1,15 @@
+
+Amount of runs: 100 
+----------------------------------------------------------------
+initial score: 8010, end score: 8366
+----------------------------------------------------------------
+
+Railmap: 
+1 Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Zaandam - Hoorn, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum
+2 Alkmaar - Den Helder, Castricum - Alkmaar, Alkmaar - Hoorn, Castricum - Alkmaar, Beverwijk - Castricum, Zaandam - Beverwijk
+3 Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Alphen a/d Rijn
+4 Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Gouda, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Den Haag Centraal - Gouda, Den Haag Centraal - Leiden Centraal
+5 Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Den Haag Centraal - Leiden Centraal
+6 Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport
+Its total length is 676 minutes
+Its score is 8366

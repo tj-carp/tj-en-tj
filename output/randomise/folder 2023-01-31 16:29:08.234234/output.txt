@@ -1,0 +1,15 @@
+
+Amount of runs: 100000 
+----------------------------------------------------------------
+lowest score: 940, highest score: 8710, average score: 5122
+----------------------------------------------------------------
+
+Railmap: 
+1 Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk
+2 Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Den Haag Centraal - Gouda, Rotterdam Alexander - Gouda, Gouda - Alphen a/d Rijn, Den Haag Centraal - Gouda
+3 Castricum - Alkmaar, Beverwijk - Castricum, Castricum - Alkmaar, Alkmaar - Den Helder, Alkmaar - Hoorn, Zaandam - Hoorn
+4 Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn
+5 Den Haag Centraal - Gouda, Delft - Den Haag Centraal, Den Haag Centraal - Gouda, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Schiphol Airport, Leiden Centraal - Heemstede-Aerdenhout
+6 Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Zaandam - Hoorn, Zaandam - Beverwijk
+Its total length is 690 minutes
+Its score is 8710

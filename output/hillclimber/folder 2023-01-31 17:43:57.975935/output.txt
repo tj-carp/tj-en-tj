@@ -1,0 +1,15 @@
+
+Amount of runs: 100 
+----------------------------------------------------------------
+initial score: 6226, end score: 8038
+----------------------------------------------------------------
+
+Railmap: 
+1 Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Castricum - Alkmaar, Castricum - Alkmaar, Alkmaar - Hoorn, Alkmaar - Den Helder
+2 Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Zaandam - Beverwijk, Haarlem - Beverwijk, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem
+3 Delft - Den Haag Centraal, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum
+4 Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Alphen a/d Rijn, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Gouda - Alphen a/d Rijn, Leiden Centraal - Alphen a/d Rijn
+5 Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk
+6 Leiden Centraal - Schiphol Airport, Leiden Centraal - Alphen a/d Rijn, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Alphen a/d Rijn
+Its total length is 647 minutes
+Its score is 8038

@@ -1,0 +1,15 @@
+
+Amount of runs: 10 
+----------------------------------------------------------------
+initial score: 5881, end score: 6951
+----------------------------------------------------------------
+
+Railmap: 
+1 Alkmaar - Den Helder, Castricum - Alkmaar, Alkmaar - Hoorn, Zaandam - Hoorn, Zaandam - Castricum
+2 Amsterdam Zuid - Schiphol Airport, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk, Beverwijk - Castricum, Zaandam - Beverwijk, Beverwijk - Castricum
+3 Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk
+4 Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda
+5 Den Haag Centraal - Gouda, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn, Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Amstel - Amsterdam Zuid
+6 Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem
+Its total length is 663 minutes
+Its score is 6951

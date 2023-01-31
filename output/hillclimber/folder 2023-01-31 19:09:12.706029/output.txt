@@ -1,0 +1,24 @@
+
+Amount of runs: 100 
+----------------------------------------------------------------
+initial score: 1913, end score: 4924
+----------------------------------------------------------------
+
+Railmap: 
+1 Eindhoven - Helmond, Eindhoven - Helmond, Eindhoven - Helmond, Eindhoven - Helmond, Weert - Eindhoven, Eindhoven - Tilburg, Eindhoven - s-Hertogenbosch, s-Hertogenbosch - Tilburg, Utrecht Centraal - s-Hertogenbosch, s-Hertogenbosch - Oss, s-Hertogenbosch - Oss, Oss - Nijmegen
+2 Castricum - Alkmaar, Alkmaar - Den Helder, Castricum - Alkmaar, Castricum - Alkmaar, Castricum - Alkmaar, Castricum - Alkmaar, Zaandam - Castricum, Castricum - Alkmaar, Beverwijk - Castricum, Zaandam - Castricum, Zaandam - Hoorn, Zaandam - Beverwijk
+3 Deventer - Almelo, Almelo - Hengelo, Hengelo - Enschede, Almelo - Hengelo, Deventer - Almelo, Deventer - Apeldoorn, Deventer - Apeldoorn, Zwolle - Deventer, Deventer - Zutphen, Apeldoorn - Zutphen, Apeldoorn - Zutphen
+4 Almelo - Hengelo, Deventer - Almelo, Deventer - Almelo, Zwolle - Deventer, Zwolle - Amersfoort, Assen - Zwolle, Groningen - Assen
+5 Roermond - Weert, Weert - Eindhoven, Weert - Eindhoven, Roermond - Weert, Sittard - Roermond, Sittard - Heerlen, Sittard - Heerlen, Sittard - Roermond, Sittard - Heerlen, Sittard - Roermond, Sittard - Roermond
+6 Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Almere Centrum, Almere Centrum - Lelystad Centrum, Hilversum - Almere Centrum, Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Hilversum
+7 Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Zutphen - Dieren, Deventer - Zutphen, Deventer - Apeldoorn, Apeldoorn - Zutphen, Apeldoorn - Amersfoort, Apeldoorn - Amersfoort, Zwolle - Amersfoort
+8 Nijmegen - Arnhem Centraal, Nijmegen - Arnhem Centraal, Oss - Nijmegen, Oss - Nijmegen, Oss - Nijmegen, s-Hertogenbosch - Oss, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Amsterdam Amstel, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk
+9 Den Haag HS - Leiden Centraal, Den Haag HS - Gouda, Den Haag HS - Leiden Centraal, Delft - Den Haag HS, Den Haag HS - Gouda, Den Haag Laan v NOI - Gouda, Den Haag Centraal - Gouda, Utrecht Centraal - Gouda, Gouda - Alphen a/d Rijn, Den Haag HS - Gouda
+10 Breda - Etten-Leur, Breda - Etten-Leur, Breda - Etten-Leur, Breda - Dordrecht, Tilburg - Breda, s-Hertogenbosch - Tilburg, Eindhoven - s-Hertogenbosch, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - Amsterdam Amstel
+11 Amsterdam Zuid - Schiphol Airport, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - Hilversum, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Amsterdam Centraal
+12 Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Zaandam - Beverwijk, Zaandam - Hoorn, Alkmaar - Hoorn, Castricum - Alkmaar, Beverwijk - Castricum, Haarlem - Beverwijk, Amsterdam Sloterdijk - Haarlem, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal
+13 Haarlem - Beverwijk, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Zaandam - Beverwijk, Zaandam - Castricum, Castricum - Alkmaar, Beverwijk - Castricum, Haarlem - Beverwijk, Haarlem - Beverwijk, Heemstede-Aerdenhout - Haarlem, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Laan v NOI - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal
+14 Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Centraal - Almere Centrum, Utrecht Centraal - Amsterdam Centraal, Utrecht Centraal - Gouda, Den Haag Centraal - Gouda, Den Haag HS - Gouda, Delft - Den Haag HS, Den Haag HS - Gouda, Rotterdam Alexander - Gouda, Den Haag Laan v NOI - Gouda
+15 Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - Amersfoort, Apeldoorn - Amersfoort, Utrecht Centraal - Amersfoort, Apeldoorn - Amersfoort, Apeldoorn - Amersfoort
+Its total length is 2564 minutes
+Its score is 4924

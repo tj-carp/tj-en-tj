@@ -29,9 +29,9 @@ class HillClimber:
         creates new random routes for possible improvement for i tries
         """
         # create random or best random railmap according to start choice
-        random_railmap = randomise.Randomise(self.connections, 1000)
+        random_railmap = randomise.Randomise(self.connections, 100000)
 
-        if self.start == 1:
+        if self.start == '1':
             random_railmap = random_railmap.create_railmap()
         else:
             random_railmap = random_railmap.create_best_railmap()       
