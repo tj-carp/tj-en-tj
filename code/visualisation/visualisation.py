@@ -97,7 +97,7 @@ def run_visualise(railmap, connections, algorithm, scores, tries, result):
     """
 
     now = str(datetime.now())
-    output_folder = f"output/{algorithm}/{now}"
+    output_folder = f"output/{algorithm}/folder {now}"
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
