@@ -45,8 +45,7 @@ class Randomise():
         return railmap
 
     def create_best_railmap(self):
-        for x, i in enumerate(range(self.tries)):
-            # tdqm(x, desc="Progress")
+        for i in range(self.tries):
             random_railmap = self.create_railmap()
             score = random_railmap.score()
             self.railmaps.update({score : random_railmap})
@@ -73,7 +72,14 @@ class Randomise():
                 f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(self.scores)/self.tries)}\n"\
                 f"----------------------------------------------------------------\n\n"\
                 f"{self.railmaps[max_score]}"
-        
+        self.save_output(result)
         print(result)
         visualise(self.railmaps[max_score], self.connections, "randomise")
         progress_random(self.scores, self.tries)
+
+    def save_output(self, result):
+        now = str(datetime.now())
+        f = open("output/randomise/output-{now}.txt", 'w+')
+        f.write(result)
+        f.close()
+

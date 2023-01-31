@@ -100,9 +100,17 @@ class HillClimber:
         f"----------------------------------------------------------------\n\n"\
         f"{railmap}"
         
+        self.save_output(result)
         print(result)
+        
         progress_HC(self.scores, self.tries)
         visualise(railmap, self.connections, "hillclimber")
+
+    def save_output(self, result):
+        now = str(datetime.now())
+        f = open("output/hillclimber/output-{now}.txt", 'w+')
+        f.write(result)
+        f.close()
     
 
 
