@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # --------------------------- Hill Climber ---------------------------------
     if alg_choice == '3' or alg_choice == '4':
         # request input for how to run hillclimber
-        print("Type 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
+        print("\nType 1 to start hillclimber off with a random railmap, or type 2 to run randomise first and start off with the best random railmap")
         start_choice = input("Type here: ")
 
         # ensure valid input

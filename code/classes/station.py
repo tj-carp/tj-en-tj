@@ -1,5 +1,4 @@
 class Station:
-    
     def __init__(self, name, coord_y, coord_x):
         self.name = name
         self.coords = (float(coord_y), float(coord_x))
