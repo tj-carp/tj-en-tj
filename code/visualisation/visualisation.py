@@ -110,4 +110,12 @@ def progress_random(scores, tries):
     print(f"output saved as progress of randomise-{now}.jpg")
     plt.show()
 
+def run_visualise(railmap, connections, algorithm, scores, tries):
+    """
+    calls all visualisation functions
+    """
+
+    visualise(railmap, connections, algorithm)
+    visualise_scores(scores, algorithm)
+    progress_random(scores, tries)
 
