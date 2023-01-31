@@ -61,6 +61,7 @@ def visualise(railmap, connections, output_folder):
     map.scatter(x_route_map, y_route_map)
     plt.savefig(f"{output_folder}/railmap.png")
     plt.show()
+    plt.close()
 
     
 def visualise_scores(scores, output_folder):
@@ -78,6 +79,7 @@ def visualise_scores(scores, output_folder):
     plt.savefig(f"{output_folder}/histogram.png")
     print(f"saved file as histogram")
     plt.show()
+    plt.close()
 
 def vis_progress(scores, tries, output_folder):
     x = [i for i in range(tries)]
@@ -90,6 +92,7 @@ def vis_progress(scores, tries, output_folder):
     plt.savefig(f"{output_folder}/progress.png")
     print(f"output saved as progress")
     plt.show()
+    plt.close()
 
 def run_visualise(railmap, connections, algorithm, scores, tries, result):
     """

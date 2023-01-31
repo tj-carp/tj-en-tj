@@ -66,7 +66,7 @@ class Randomise():
 
     def run(self):
         best_random = self.create_best_railmap()
-
+        
         max_score = self.sorted_scores[(len(self.sorted_scores) - 1)]
         min_score = self.sorted_scores[0]
 

@@ -1,5 +1,4 @@
 from code.classes.graph import Graph
-from code.visualisation.visualisation import visualise
 from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
 
@@ -51,7 +50,6 @@ if __name__ == "__main__":
         print(f"Running randomise {tries} times...")
         
         randomise.run()
-        
     # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
         print("Running greedy ...")
