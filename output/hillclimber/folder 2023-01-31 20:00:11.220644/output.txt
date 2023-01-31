@@ -1,0 +1,21 @@
+
+Amount of runs: 10 
+----------------------------------------------------------------
+initial score: 4633, end score: 4633
+----------------------------------------------------------------
+
+Railmap: 
+1 Sittard - Roermond, Sittard - Heerlen, Sittard - Heerlen, Sittard - Heerlen, Maastricht - Sittard, Maastricht - Sittard, Sittard - Roermond, Roermond - Weert, Weert - Eindhoven, Roermond - Weert, Roermond - Weert
+2 Amsterdam Sloterdijk - Zaandam, Zaandam - Beverwijk, Haarlem - Beverwijk, Beverwijk - Castricum, Beverwijk - Castricum, Castricum - Alkmaar, Castricum - Alkmaar, Alkmaar - Den Helder, Castricum - Alkmaar, Zaandam - Castricum, Zaandam - Hoorn
+3 Zaandam - Hoorn, Zaandam - Beverwijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Laan v NOI - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal, Delft - Den Haag Laan v NOI, Delft - Den Haag Centraal
+4 Zwolle - Amersfoort, Zwolle - Almelo, Deventer - Almelo, Deventer - Zutphen, Zwolle - Deventer, Steenwijk - Zwolle
+5 Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Almere Centrum, Utrecht Centraal - Amsterdam Centraal, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Amersfoort, Apeldoorn - Amersfoort
+6 Apeldoorn - Zutphen, Deventer - Apeldoorn, Apeldoorn - Amersfoort, Apeldoorn - Amersfoort, Utrecht Centraal - Amersfoort, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Amstel - Amsterdam Zuid
+7 Zutphen - Dieren, Arnhem Centraal - Dieren, Nijmegen - Arnhem Centraal, Nijmegen - Arnhem Centraal, Oss - Nijmegen, s-Hertogenbosch - Oss, s-Hertogenbosch - Tilburg, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - s-Hertogenbosch
+8 Leeuwarden - Heerenveen, Heerenveen - Steenwijk, Leeuwarden - Heerenveen, Leeuwarden - Groningen, Leeuwarden - Heerenveen, Heerenveen - Steenwijk, Steenwijk - Zwolle, Zwolle - Amersfoort
+9 Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Dordrecht - Rotterdam Blaak, Dordrecht - Rotterdam Blaak, Roosendaal - Dordrecht, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Den Haag HS - Gouda, Gouda - Alphen a/d Rijn, Den Haag Centraal - Gouda
+10 Hengelo - Enschede, Hengelo - Enschede, Almelo - Hengelo, Almelo - Hengelo, Deventer - Almelo, Zwolle - Deventer, Zwolle - Amersfoort, Zwolle - Deventer, Steenwijk - Zwolle
+11 Utrecht Centraal - Hilversum, Utrecht Centraal - Amsterdam Amstel, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Almere Centrum, Almere Centrum - Lelystad Centrum, Almere Centrum - Lelystad Centrum, Almere Centrum - Lelystad Centrum, Hilversum - Almere Centrum, Amsterdam Amstel - Hilversum
+12 Breda - Etten-Leur, Breda - Dordrecht, Roosendaal - Dordrecht, Breda - Dordrecht, Breda - Dordrecht, Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Rotterdam Alexander, Dordrecht - Rotterdam Blaak, Breda - Dordrecht
+Its total length is 2032 minutes
+Its score is 4633

@@ -5,6 +5,11 @@ from tqdm import tqdm
 from copy import deepcopy
 
 class Randomise():
+    """
+    Randomise class in which constraints are determined depending on map size,
+    one random railmap can be created with those parameters, or random railmaps
+    with those parameters can be created tries amount of times
+    """
     def __init__(self, connections, tries):
         self.connections = connections
         # create connections ids list
@@ -20,6 +25,9 @@ class Randomise():
         self.tries = tries
 
     def create_railmap(self):
+        """
+        create a random railmap
+        """
         # create empty railmap
         railmap = RailMap(self.connections)
         # fill railmap with 4 or 9 to 7 or 20 routes
@@ -45,7 +53,7 @@ class Randomise():
 
     def create_best_railmap(self):
         """
-        Function to run randomise tries amount of times to increase chances of good random railmap
+        run randomise tries amount of times, save all results and return best of random railmaps
         """
         # show progress bar and run randomise tries amount of times
         for item in tqdm(range(self.tries)):
@@ -65,8 +73,11 @@ class Randomise():
         return best_random
 
     def run(self):
+        """
+        run random algorithm to get best random railmap and produce, save and show results
+        """
         best_random = self.create_best_railmap()
-
+        
         max_score = self.sorted_scores[(len(self.sorted_scores) - 1)]
         min_score = self.sorted_scores[0]
 
@@ -78,5 +89,3 @@ class Randomise():
         print(result)
 
         run_visualise(best_random, self.connections, "randomise", self.scores, self.tries, result)
-
-

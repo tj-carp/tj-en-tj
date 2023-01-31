@@ -3,6 +3,7 @@ from mpl_toolkits.basemap import Basemap
 import numpy as np 
 from datetime import datetime
 import os
+from copy import deepcopy
 
 def visualise(railmap, connections, output_folder):
 
@@ -56,6 +57,7 @@ def visualise(railmap, connections, output_folder):
     map.scatter(x_coords, y_coords)
     plt.savefig(f"{output_folder}/railmap.png")
     plt.show()
+    plt.close()
 
     
 def visualise_scores(scores, output_folder):
@@ -73,10 +75,12 @@ def visualise_scores(scores, output_folder):
     plt.savefig(f"{output_folder}/histogram.png")
     print(f"saved file as histogram")
     plt.show()
+    plt.close()
 
 def vis_progress(scores, tries, output_folder):
     x = [i for i in range(tries)]
-    y = [max(scores[:i+1]) for i in range(tries)]
+    scores.sort()
+    y = [scores[i] for i in range(tries)]
     plt.plot(x, y)
     plt.xlabel("Number of tries")
     plt.ylabel("Best score")
@@ -85,6 +89,7 @@ def vis_progress(scores, tries, output_folder):
     plt.savefig(f"{output_folder}/progress.png")
     print(f"output saved as progress")
     plt.show()
+    plt.close()
 
 def run_visualise(railmap, connections, algorithm, scores, tries, result):
     """
@@ -103,7 +108,6 @@ def run_visualise(railmap, connections, algorithm, scores, tries, result):
     save_output(result, output_folder)
 
 def save_output(result, output_folder):
-    now = str(datetime.now())
     f = open(f"{output_folder}/output.txt", 'w+')
     f.write(result)
     f.close()

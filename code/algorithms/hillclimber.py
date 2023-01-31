@@ -1,7 +1,6 @@
 from copy import deepcopy
 from code.algorithms import randomise
 from code.visualisation.visualisation import run_visualise
-from matplotlib import pyplot as plt
 import random
 from tqdm import tqdm
 
@@ -23,17 +22,16 @@ class HillClimber:
         self.initial_score = 0
         self.best_score = 0
         self.tries = tries
-        #10000 if len(self.connections) == 28 else 1000
 
     def create_railmap(self):
         """
-        Instantiates a random railmap according to input to begin with and 
+        instantiates a random railmap according to input to begin with and 
         creates new random routes for possible improvement for i tries
         """
-        # create random railmap according to start choice
-        random_railmap = randomise.Randomise(self.connections, 1000)
+        # create random or best random railmap according to start choice
+        random_railmap = randomise.Randomise(self.connections, 100000)
 
-        if self.start == 1:
+        if self.start == '1':
             random_railmap = random_railmap.create_railmap()
         else:
             random_railmap = random_railmap.create_best_railmap()       
@@ -48,9 +46,9 @@ class HillClimber:
         best_railmap = deepcopy(random_railmap)
         new_railmap = deepcopy(random_railmap)
 
-
+        # show progress bar and try to swap a new route with existing routes tries amount of times
         for i in tqdm(range(self.tries)):
-            # create a new random route of anywhere between 100 or 160 and 120 or 180 minutes
+            # create a new random route of anywhere between 100 to 120 or 160 to 180 minutes
             new_route = random_railmap.create_route()
 
             while new_route.length < random.randint(self.min_length, new_route.max_length):
@@ -71,10 +69,12 @@ class HillClimber:
                 new_railmap.visited += new_route.ids
                 new_score = new_railmap.score()
                 self.scores.append(new_score)
+
                 # save the swap with best score gain
                 if new_score > self.best_score:
                     self.best_score = new_score
                     best_railmap = deepcopy(new_railmap)
+
                 # after the first iteration, check against previous iteration's railmap
                 if i > 0:
                     new_railmap = deepcopy(better_railmap)
@@ -87,6 +87,9 @@ class HillClimber:
         return best_railmap
 
     def run(self):
+        """
+        run hillclimber algorithm to get railmap and produce, save and show results
+        """
         railmap = self.create_railmap()
         result = f"\nAmount of runs: {self.tries} \n----------------------------------------------------------------\n"\
         f"initial score: {self.first_score}, end score: {self.best_score}\n"\

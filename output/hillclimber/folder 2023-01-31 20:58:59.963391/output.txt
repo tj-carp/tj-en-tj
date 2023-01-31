@@ -1,0 +1,19 @@
+
+Amount of runs: 10000 
+----------------------------------------------------------------
+initial score: 4592, end score: 6079
+----------------------------------------------------------------
+
+Railmap: 
+1 Leiden Centraal - Heemstede-Aerdenhout, Den Haag HS - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal, Den Haag Laan v NOI - Gouda, Gouda - Alphen a/d Rijn, Den Haag Centraal - Gouda, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn
+2 Deventer - Zutphen, Zwolle - Deventer, Deventer - Zutphen, Deventer - Apeldoorn, Apeldoorn - Zutphen, Zutphen - Dieren, Deventer - Zutphen, Deventer - Almelo, Almelo - Hengelo, Hengelo - Enschede, Hengelo - Enschede, Hengelo - Enschede, Hengelo - Enschede
+3 Zaandam - Castricum, Zaandam - Hoorn, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Centraal - Almere Centrum, Almere Centrum - Lelystad Centrum, Hilversum - Almere Centrum, Utrecht Centraal - Hilversum, Utrecht Centraal - Amersfoort, Utrecht Centraal - s-Hertogenbosch
+4 Helmond - Venlo, Eindhoven - Helmond, Weert - Eindhoven, Eindhoven - s-Hertogenbosch, s-Hertogenbosch - Oss, Oss - Nijmegen, Nijmegen - Arnhem Centraal, Oss - Nijmegen, Nijmegen - Arnhem Centraal, Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Ede-Wageningen
+5 Eindhoven - s-Hertogenbosch, Eindhoven - Helmond, Eindhoven - Tilburg, Eindhoven - Tilburg, Weert - Eindhoven, Roermond - Weert, Sittard - Roermond, Maastricht - Sittard, Maastricht - Sittard, Sittard - Heerlen
+6 Delft - Den Haag HS, Delft - Den Haag HS, Delft - Den Haag HS, Delft - Den Haag HS, Delft - Den Haag Centraal, Delft - Den Haag HS, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Dordrecht - Rotterdam Centraal, Dordrecht - Rotterdam Blaak, Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Laan v NOI, Den Haag Laan v NOI - Leiden Centraal
+7 Amsterdam Amstel - Almere Centrum, Hilversum - Almere Centrum, Utrecht Centraal - Hilversum, Utrecht Centraal - Hilversum, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Gouda, Rotterdam Alexander - Gouda, Den Haag HS - Gouda, Delft - Den Haag HS, Delft - Den Haag Laan v NOI
+8 Leeuwarden - Heerenveen, Heerenveen - Steenwijk, Steenwijk - Zwolle, Zwolle - Deventer, Zwolle - Almelo, Assen - Zwolle
+9 Dordrecht - Rotterdam Centraal, Roosendaal - Dordrecht, Etten-Leur - Roosendaal, Breda - Etten-Leur, Breda - Dordrecht, Breda - Dordrecht, Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Alexander - Gouda, Utrecht Centraal - Gouda, Utrecht Centraal - Amsterdam Centraal
+10 Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk, Beverwijk - Castricum, Zaandam - Castricum, Castricum - Alkmaar, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Zaandam - Hoorn, Alkmaar - Hoorn
+Its total length is 1685 minutes
+Its score is 6079

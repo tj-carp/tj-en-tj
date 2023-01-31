@@ -1,0 +1,19 @@
+
+Amount of runs: 1000 
+----------------------------------------------------------------
+initial score: 1898, end score: 5346
+----------------------------------------------------------------
+
+Railmap: 
+1 Schiedam Centrum - Delft, Delft - Den Haag HS, Delft - Den Haag Centraal, Den Haag Centraal - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Amsterdam Centraal, Utrecht Centraal - Amsterdam Amstel
+2 Schiedam Centrum - Delft, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Laan v NOI, Den Haag Laan v NOI - Gouda, Rotterdam Alexander - Gouda, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Alexander - Gouda, Gouda - Alphen a/d Rijn
+3 s-Hertogenbosch - Oss, Eindhoven - s-Hertogenbosch, Weert - Eindhoven, Eindhoven - Tilburg, Tilburg - Breda, Breda - Dordrecht, Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Rotterdam Alexander, Dordrecht - Rotterdam Blaak, Roosendaal - Dordrecht
+4 Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Nijmegen - Arnhem Centraal, Oss - Nijmegen, Oss - Nijmegen, s-Hertogenbosch - Oss, Eindhoven - s-Hertogenbosch, Eindhoven - Helmond, Eindhoven - s-Hertogenbosch, s-Hertogenbosch - Tilburg, Eindhoven - Tilburg, Eindhoven - s-Hertogenbosch
+5 Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Gouda, Rotterdam Alexander - Gouda, Rotterdam Alexander - Gouda, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Alexander - Gouda, Den Haag HS - Gouda, Den Haag HS - Gouda, Gouda - Alphen a/d Rijn, Utrecht Centraal - Gouda
+6 Amsterdam Centraal - Almere Centrum, Hilversum - Almere Centrum, Almere Centrum - Lelystad Centrum, Almere Centrum - Lelystad Centrum, Amsterdam Amstel - Almere Centrum, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Almere Centrum, Utrecht Centraal - Amsterdam Amstel, Amsterdam Amstel - Amsterdam Zuid
+7 Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal, Den Haag Laan v NOI - Gouda, Utrecht Centraal - Gouda, Rotterdam Alexander - Gouda, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag HS, Den Haag HS - Leiden Centraal
+8 Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Schiphol Airport, Den Haag HS - Leiden Centraal, Den Haag HS - Gouda, Gouda - Alphen a/d Rijn, Gouda - Alphen a/d Rijn, Den Haag Centraal - Gouda, Delft - Den Haag Centraal, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal
+9 Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Zutphen - Dieren, Zutphen - Dieren, Deventer - Zutphen, Apeldoorn - Zutphen, Apeldoorn - Amersfoort, Utrecht Centraal - Amersfoort, Utrecht Centraal - Amsterdam Centraal, Utrecht Centraal - Hilversum
+10 Etten-Leur - Roosendaal, Breda - Etten-Leur, Breda - Dordrecht, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Gouda - Alphen a/d Rijn, Gouda - Alphen a/d Rijn, Den Haag Laan v NOI - Gouda, Utrecht Centraal - Gouda, Utrecht Centraal - Amsterdam Amstel
+Its total length is 1631 minutes
+Its score is 5346

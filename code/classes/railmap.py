@@ -12,29 +12,30 @@ class RailMap:
 
     def create_route(self):
         """
-        Create an empty route object
+        create an empty route object
         """
         route = Route(self.connections)
         return route
 
     def score(self):
         """
-        Calculate the quality score of railmap
+        calculate the quality score of railmap
         """
         fraction = len(self.connections)
-        # implement quality formula
+
         # calculate fraction of connections used
         p = 1/fraction * len(set(self.visited))
+
         T = len(self.routes)
         Min = self.minutes
         K = p * 10000 - (T * 100 + Min)
-        # print(f"Its score is {int(K)}")
+        
         return int(K)
 
 
     def __repr__(self):
         """
-        Make sure that the object is printed properly
+        make sure that the object is printed properly
         """
         rep = "Railmap: "
         

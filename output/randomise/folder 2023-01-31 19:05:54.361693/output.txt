@@ -1,0 +1,20 @@
+
+Amount of runs: 100000 
+----------------------------------------------------------------
+lowest score: -294, highest score: 4558, average score: 2374
+----------------------------------------------------------------
+
+Railmap: 
+1 Maastricht - Sittard, Maastricht - Sittard, Sittard - Heerlen, Sittard - Heerlen, Maastricht - Sittard, Maastricht - Sittard, Sittard - Roermond, Sittard - Roermond, Maastricht - Sittard, Maastricht - Sittard, Sittard - Roermond
+2 Delft - Den Haag Laan v NOI, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Delft - Den Haag Laan v NOI, Den Haag Laan v NOI - Gouda, Gouda - Alphen a/d Rijn, Den Haag HS - Gouda, Utrecht Centraal - Gouda, Utrecht Centraal - Schiphol Airport
+3 Hilversum - Almere Centrum, Almere Centrum - Lelystad Centrum, Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Hilversum, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk
+4 Rotterdam Blaak - Schiedam Centrum, Dordrecht - Rotterdam Blaak, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Schiedam Centrum - Delft, Delft - Den Haag HS, Delft - Den Haag Laan v NOI, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Delft - Den Haag Centraal, Schiedam Centrum - Delft
+5 Amsterdam Amstel - Hilversum, Amsterdam Amstel - Almere Centrum, Amsterdam Amstel - Almere Centrum, Amsterdam Amstel - Amsterdam Centraal, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Hilversum, Utrecht Centraal - Hilversum, Utrecht Centraal - Alphen a/d Rijn
+6 Zwolle - Almelo, Assen - Zwolle, Zwolle - Deventer, Steenwijk - Zwolle, Heerenveen - Steenwijk, Leeuwarden - Heerenveen
+7 Alkmaar - Den Helder, Alkmaar - Den Helder, Alkmaar - Hoorn, Castricum - Alkmaar, Castricum - Alkmaar, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk, Haarlem - Beverwijk
+8 Weert - Eindhoven, Eindhoven - Tilburg, Weert - Eindhoven, Eindhoven - Helmond, Helmond - Venlo, Eindhoven - Helmond, Eindhoven - Tilburg, Eindhoven - Tilburg, Tilburg - Breda, Eindhoven - Tilburg
+9 Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport, Den Haag Laan v NOI - Leiden Centraal, Leiden Centraal - Schiphol Airport, Utrecht Centraal - Schiphol Airport, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Amersfoort, Utrecht Centraal - Amersfoort, Utrecht Centraal - Ede-Wageningen
+10 s-Hertogenbosch - Tilburg, Eindhoven - s-Hertogenbosch, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Ede-Wageningen, Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Dieren, Zutphen - Dieren, Deventer - Zutphen, Deventer - Apeldoorn, Apeldoorn - Zutphen
+11 Den Haag Laan v NOI - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Den Haag Laan v NOI - Gouda, Den Haag Centraal - Gouda, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Heemstede-Aerdenhout, Den Haag HS - Leiden Centraal
+Its total length is 1870 minutes
+Its score is 4558

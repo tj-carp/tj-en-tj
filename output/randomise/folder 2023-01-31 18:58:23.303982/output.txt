@@ -1,0 +1,23 @@
+
+Amount of runs: 1000 
+----------------------------------------------------------------
+lowest score: 493, highest score: 3937, average score: 2374
+----------------------------------------------------------------
+
+Railmap: 
+1 Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Castricum - Alkmaar, Castricum - Alkmaar, Castricum - Alkmaar, Alkmaar - Den Helder, Alkmaar - Den Helder, Alkmaar - Den Helder, Castricum - Alkmaar, Castricum - Alkmaar
+2 Roosendaal - Dordrecht, Dordrecht - Rotterdam Centraal, Dordrecht - Rotterdam Blaak, Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Alexander - Gouda, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Dordrecht - Rotterdam Blaak, Breda - Dordrecht
+3 Sittard - Roermond, Sittard - Heerlen, Sittard - Heerlen, Sittard - Heerlen, Sittard - Roermond, Maastricht - Sittard, Sittard - Roermond, Sittard - Heerlen, Sittard - Heerlen, Sittard - Roermond, Roermond - Weert, Roermond - Weert
+4 Amsterdam Amstel - Hilversum, Amsterdam Amstel - Almere Centrum, Almere Centrum - Lelystad Centrum, Amsterdam Amstel - Almere Centrum, Hilversum - Almere Centrum, Amsterdam Amstel - Almere Centrum, Amsterdam Centraal - Almere Centrum
+5 Leeuwarden - Heerenveen, Leeuwarden - Heerenveen, Leeuwarden - Groningen, Groningen - Assen, Assen - Zwolle, Groningen - Assen, Leeuwarden - Groningen
+6 Delft - Den Haag HS, Delft - Den Haag Centraal, Den Haag Centraal - Gouda, Rotterdam Alexander - Gouda, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Laan v NOI, Den Haag Laan v NOI - Gouda, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Den Haag Laan v NOI - Gouda
+7 Deventer - Apeldoorn, Deventer - Apeldoorn, Deventer - Zutphen, Deventer - Apeldoorn, Zwolle - Deventer, Zwolle - Deventer, Deventer - Apeldoorn, Zwolle - Deventer, Zwolle - Amersfoort, Utrecht Centraal - Amersfoort
+8 Eindhoven - Helmond, Eindhoven - Helmond, Helmond - Venlo, Helmond - Venlo, Eindhoven - Helmond, Eindhoven - Tilburg, Weert - Eindhoven, Roermond - Weert, Weert - Eindhoven, Eindhoven - s-Hertogenbosch
+9 Deventer - Zutphen, Apeldoorn - Zutphen, Apeldoorn - Amersfoort, Utrecht Centraal - Amersfoort, Utrecht Centraal - Gouda, Utrecht Centraal - Ede-Wageningen, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Schiphol Airport
+10 Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Breda - Dordrecht, Breda - Dordrecht, Dordrecht - Rotterdam Centraal, Roosendaal - Dordrecht, Breda - Dordrecht, Tilburg - Breda, Eindhoven - Tilburg
+11 s-Hertogenbosch - Oss, s-Hertogenbosch - Tilburg, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Hilversum, Hilversum - Almere Centrum, Amsterdam Centraal - Almere Centrum, Amsterdam Centraal - Amsterdam Sloterdijk, Utrecht Centraal - Amsterdam Centraal
+12 Zutphen - Dieren, Deventer - Zutphen, Zutphen - Dieren, Deventer - Zutphen, Zwolle - Deventer, Steenwijk - Zwolle, Zwolle - Deventer, Steenwijk - Zwolle, Heerenveen - Steenwijk, Steenwijk - Zwolle
+13 Heemstede-Aerdenhout - Haarlem, Amsterdam Sloterdijk - Haarlem, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Zaandam - Beverwijk, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Amsterdam Amstel - Amsterdam Zuid
+14 Arnhem Centraal - Dieren, Nijmegen - Arnhem Centraal, Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Ede-Wageningen, Arnhem Centraal - Dieren, Nijmegen - Arnhem Centraal, Nijmegen - Arnhem Centraal, Arnhem Centraal - Dieren, Nijmegen - Arnhem Centraal, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren, Arnhem Centraal - Dieren
+Its total length is 2415 minutes
+Its score is 3937
