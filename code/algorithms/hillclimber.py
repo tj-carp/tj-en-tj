@@ -1,6 +1,6 @@
 from copy import deepcopy
 from code.algorithms import randomise
-from code.visualisation.visualisation import visualise, visualise_scores, progress_HC 
+from code.visualisation.visualisation import run_visualise
 from matplotlib import pyplot as plt
 import random
 from tqdm import tqdm
@@ -103,9 +103,8 @@ class HillClimber:
 
         self.save_output(result)
         print(result)
-        
-        progress_HC(self.scores, self.tries)
-        visualise(railmap, self.connections, "hillclimber")
+
+        run_visualise(railmap, self.connections, "hillclimber", self.scores, self.tries)
 
     def save_output(self, result):
         ey = str(datetime.now())
