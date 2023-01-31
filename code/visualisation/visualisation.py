@@ -84,7 +84,7 @@ def visualise_scores(scores, algorithm):
     print(f"saved file as histogram-{now}")
     plt.show()
 
-def progress_HC(scores, tries):
+def vis_progress(scores, tries, algorithm):
     x = [i for i in range(tries)]
     y = [max(scores[:i+1]) for i in range(tries)]
     now = str(datetime.now())
@@ -92,22 +92,9 @@ def progress_HC(scores, tries):
     plt.xlabel("Number of tries")
     plt.ylabel("Best score")
     plt.ylim(2000, 10000)
-    plt.title("Progress of Hill Climber")
-    plt.savefig(f"output/hillclimber/progress of hillclimber-{now}.jpg")
-    print(f"output saved as progress of hillclimber-{now}.jpg")
-    plt.show()
-
-def progress_random(scores, tries):
-    x = [i for i in range(tries)]
-    y = [max(scores[:i+1]) for i in range(tries)]
-    now = str(datetime.now())
-    plt.plot(x, y)
-    plt.xlabel("Number of tries")
-    plt.ylabel("Best score")
-    plt.ylim(2000, 10000)
-    plt.title("Progress of Randomise")
-    plt.savefig(f"output/randomise/progress of randomise-{now}.jpg")
-    print(f"output saved as progress of randomise-{now}.jpg")
+    plt.title(f"Progress of {algorithm}")
+    plt.savefig(f"output/{algorithm}/progress of {algorithm}-{now}.jpg")
+    print(f"output saved as progress of {algorithm}-{now}.jpg")
     plt.show()
 
 def run_visualise(railmap, connections, algorithm, scores, tries, result):
@@ -117,7 +104,7 @@ def run_visualise(railmap, connections, algorithm, scores, tries, result):
 
     visualise(railmap, connections, algorithm)
     visualise_scores(scores, algorithm)
-    progress_random(scores, tries)
+    vis_progress(scores, tries, algorithm)
     save_output(result, algorithm)
 
 
