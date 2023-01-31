@@ -4,7 +4,6 @@ from code.visualisation.visualisation import run_visualise
 from matplotlib import pyplot as plt
 import random
 from tqdm import tqdm
-from datetime import datetime
 import time
 
 class HillClimber:

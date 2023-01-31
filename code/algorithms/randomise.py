@@ -2,9 +2,6 @@ from code.classes.railmap import RailMap
 from code.visualisation.visualisation import run_visualise
 import random
 from tqdm import tqdm
-from matplotlib import pyplot as plt
-from datetime import datetime
-import time
 from copy import deepcopy
 
 class Randomise():
@@ -72,7 +69,7 @@ class Randomise():
                 f"lowest score: {min_score}, highest score: {max_score}, average score: {round(sum(self.scores)/self.tries)}\n"\
                 f"----------------------------------------------------------------\n\n"\
                 f"{self.railmaps[max_score]}"
-                
+
         print(result)
 
         run_visualise(self.railmaps[max_score], self.connections, "randomise", self.scores, self.tries, result)
