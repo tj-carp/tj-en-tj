@@ -1,6 +1,5 @@
 from code.classes.graph import Graph
 from code.algorithms import randomise, greedy, hillclimber
-from code.visualisation import omega_vis 
 from sys import argv
 
 if __name__ == "__main__":
