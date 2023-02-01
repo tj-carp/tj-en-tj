@@ -20,8 +20,6 @@ def run(connections):
     print(result)
 
     run_visualise(greedy_railmap, connections, "greedy", scores, tries, result)
-    
-    return greedy_railmap
 
 
 def extend_route(route, current_connection, railmap):
@@ -132,5 +130,8 @@ def create_railmap(connections):
 
         # update unsat_stats
         unsat_stats = unsaturated_stations()
+
+    for c in connections:
+        c.visited = False
 
     return railmap

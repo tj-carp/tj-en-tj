@@ -1,5 +1,5 @@
 from code.classes.graph import Graph
-from code.algorithms import randomise, greedy, hillclimber
+from code.algorithms import randomise, greedy, hillclimber, reserve2
 from sys import argv
 
 if __name__ == "__main__":
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
         print("Running greedy ...")
-        greedy_railmap = greedy.run(connections)
+        greedy_railmap = reserve2.run(connections)
     # --------------------------- Hill Climber ---------------------------------
     if alg_choice == '3' or alg_choice == '4':
         # request input for how to run hillclimber
