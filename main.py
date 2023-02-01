@@ -1,5 +1,6 @@
 from code.classes.graph import Graph
 from code.algorithms import randomise, greedy, hillclimber
+from code.visualisation import omega_vis 
 from sys import argv
 
 if __name__ == "__main__":
@@ -84,4 +85,10 @@ if __name__ == "__main__":
         print(f"Running hillclimber {tries} times...")
         
         hillclimber.run()
+
+        # ----------------------- comparitive visualisation --------------------------
+
+    if alg_choice == '4':
+        print("hello world")
+        omega_vis(algorithms, scores1, scores2, scores3)
     

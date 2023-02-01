@@ -111,3 +111,17 @@ def save_output(result, output_folder):
     f = open(f"{output_folder}/output.txt", 'w+')
     f.write(result)
     f.close()
+
+def omega_vis(algorithms, scores1, scores2, scores3):
+    fig, ax = plt.subplots()
+    x = range(len(algorithms))
+    ax.plot(x, scores1, label='Scores 1')
+    ax.plot(x, scores2, label='Scores 2')
+    ax.plot(x, scores3, label='Scores 3')
+    ax.set_xticks(x)
+    ax.set_xticklabels(algorithms)
+    ax.set_xlabel("Algorithms")
+    ax.set_ylabel("Scores")
+    ax.set_title("Scores of Different Algorithms")
+    ax.legend()
+    plt.show()
