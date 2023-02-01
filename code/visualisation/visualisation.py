@@ -79,7 +79,8 @@ def visualise_scores(scores, output_folder):
 
 def vis_progress(scores, tries, output_folder):
     x = [i for i in range(tries)]
-    scores.sort()
+    sorted_scores = deepcopy(scores)
+    sorted_scores.sort()
     y = [scores[i] for i in range(tries)]
     plt.plot(x, y)
     plt.xlabel("Number of tries")
