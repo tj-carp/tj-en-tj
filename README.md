@@ -40,7 +40,7 @@ and follow instructions for input
   - **/code/classes**: classes created for this case
   - **/code/visualisation**: code for creating a visualisation of the case
 - **/data**: the data files we use for input
-- **/output**: this is where we save output data when running any or all algorithms
+- **/output**: this is where we save the output when running any or all algorithms
 
 
 ## Versioning
