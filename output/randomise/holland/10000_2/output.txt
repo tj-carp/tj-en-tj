@@ -1,0 +1,16 @@
+
+Amount of runs: 10000 
+----------------------------------------------------------------
+lowest score: 233, highest score: 8169, average score: 5128
+----------------------------------------------------------------
+
+Railmap: 
+1 Gouda - Alphen a/d Rijn, Leiden Centraal - Alphen a/d Rijn, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Leiden Centraal - Schiphol Airport, Leiden Centraal - Heemstede-Aerdenhout, Den Haag Centraal - Leiden Centraal, Den Haag Centraal - Gouda
+2 Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Zaandam, Zaandam - Castricum, Beverwijk - Castricum, Haarlem - Beverwijk, Heemstede-Aerdenhout - Haarlem, Haarlem - Beverwijk
+3 Zaandam - Castricum, Castricum - Alkmaar, Castricum - Alkmaar, Alkmaar - Hoorn, Alkmaar - Den Helder, Castricum - Alkmaar, Zaandam - Castricum
+4 Zaandam - Hoorn, Zaandam - Beverwijk, Amsterdam Sloterdijk - Zaandam, Zaandam - Hoorn, Zaandam - Castricum, Castricum - Alkmaar, Beverwijk - Castricum
+5 Zaandam - Castricum, Zaandam - Beverwijk, Zaandam - Hoorn, Zaandam - Beverwijk, Zaandam - Castricum
+6 Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Rotterdam Alexander, Dordrecht - Rotterdam Centraal
+7 Castricum - Alkmaar, Castricum - Alkmaar, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk
+Its total length is 773 minutes
+Its score is 8169

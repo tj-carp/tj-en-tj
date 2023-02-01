@@ -1,0 +1,15 @@
+
+Amount of runs: 1000 
+----------------------------------------------------------------
+lowest score: 2008, highest score: 8362, average score: 5126
+----------------------------------------------------------------
+
+Railmap: 
+1 Den Haag Centraal - Gouda, Den Haag Centraal - Gouda, Delft - Den Haag Centraal, Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Alexander - Gouda, Gouda - Alphen a/d Rijn
+2 Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Amstel - Amsterdam Zuid, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport
+3 Delft - Den Haag Centraal, Delft - Den Haag Centraal, Delft - Den Haag Centraal, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn
+4 Amsterdam Sloterdijk - Haarlem, Haarlem - Beverwijk, Zaandam - Beverwijk, Zaandam - Castricum, Castricum - Alkmaar, Zaandam - Castricum, Amsterdam Sloterdijk - Zaandam, Amsterdam Sloterdijk - Zaandam, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport
+5 Zaandam - Hoorn, Zaandam - Hoorn, Alkmaar - Hoorn, Alkmaar - Den Helder
+6 Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Alphen a/d Rijn, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Heemstede-Aerdenhout
+Its total length is 680 minutes
+Its score is 8362

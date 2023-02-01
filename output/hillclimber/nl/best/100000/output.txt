@@ -1,0 +1,21 @@
+
+Amount of runs: 100000 
+----------------------------------------------------------------
+initial score: 4606, end score: 6046
+----------------------------------------------------------------
+
+Railmap: 
+1 Beverwijk - Castricum, Castricum - Alkmaar, Alkmaar - Hoorn, Zaandam - Hoorn, Zaandam - Castricum, Zaandam - Beverwijk, Amsterdam Sloterdijk - Zaandam, Amsterdam Zuid - Amsterdam Sloterdijk, Amsterdam Zuid - Schiphol Airport, Utrecht Centraal - Schiphol Airport
+2 Schiedam Centrum - Delft, Rotterdam Centraal - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag Centraal, Delft - Den Haag HS, Delft - Den Haag Centraal, Den Haag Centraal - Gouda, Gouda - Alphen a/d Rijn, Rotterdam Alexander - Gouda, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Centraal - Schiedam Centrum, Rotterdam Centraal - Schiedam Centrum, Dordrecht - Rotterdam Centraal, Rotterdam Centraal - Rotterdam Alexander, Rotterdam Blaak - Rotterdam Alexander, Rotterdam Blaak - Schiedam Centrum
+3 Oss - Nijmegen, s-Hertogenbosch - Oss, s-Hertogenbosch - Oss, s-Hertogenbosch - Tilburg, Eindhoven - Tilburg, Tilburg - Breda, Breda - Dordrecht, Breda - Etten-Leur, Etten-Leur - Roosendaal, Breda - Etten-Leur, Etten-Leur - Roosendaal, Roosendaal - Dordrecht
+4 Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - s-Hertogenbosch, Utrecht Centraal - Alphen a/d Rijn, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Gouda, Den Haag HS - Gouda, Delft - Den Haag HS, Delft - Den Haag HS, Delft - Den Haag Laan v NOI
+5 Leiden Centraal - Heemstede-Aerdenhout, Leiden Centraal - Alphen a/d Rijn, Den Haag Centraal - Leiden Centraal, Leiden Centraal - Schiphol Airport, Utrecht Centraal - Schiphol Airport, Amsterdam Zuid - Schiphol Airport, Leiden Centraal - Schiphol Airport, Den Haag HS - Leiden Centraal, Den Haag HS - Gouda, Delft - Den Haag HS, Delft - Den Haag Centraal
+6 Amsterdam Amstel - Amsterdam Zuid, Amsterdam Amstel - Amsterdam Centraal, Utrecht Centraal - Amsterdam Amstel, Utrecht Centraal - Amersfoort, Utrecht Centraal - Amsterdam Centraal, Utrecht Centraal - Amersfoort, Utrecht Centraal - Hilversum, Amsterdam Amstel - Hilversum, Hilversum - Almere Centrum
+7 Delft - Den Haag HS, Schiedam Centrum - Delft, Delft - Den Haag HS, Den Haag HS - Gouda, Den Haag Centraal - Gouda, Rotterdam Alexander - Gouda, Den Haag Laan v NOI - Gouda, Utrecht Centraal - Gouda, Gouda - Alphen a/d Rijn, Leiden Centraal - Alphen a/d Rijn, Den Haag HS - Leiden Centraal, Den Haag Laan v NOI - Leiden Centraal
+8 Deventer - Apeldoorn, Apeldoorn - Amersfoort, Zwolle - Amersfoort, Steenwijk - Zwolle, Heerenveen - Steenwijk, Leeuwarden - Heerenveen, Leeuwarden - Groningen, Groningen - Assen
+9 Dordrecht - Rotterdam Blaak, Rotterdam Blaak - Schiedam Centrum, Schiedam Centrum - Delft, Delft - Den Haag HS, Den Haag HS - Leiden Centraal, Den Haag HS - Leiden Centraal, Leiden Centraal - Schiphol Airport, Leiden Centraal - Heemstede-Aerdenhout, Heemstede-Aerdenhout - Haarlem, Leiden Centraal - Heemstede-Aerdenhout, Den Haag HS - Leiden Centraal, Den Haag HS - Gouda, Delft - Den Haag HS, Delft - Den Haag HS, Den Haag HS - Leiden Centraal
+10 Arnhem Centraal - Dieren, Arnhem Centraal - Ede-Wageningen, Utrecht Centraal - Ede-Wageningen, Arnhem Centraal - Ede-Wageningen, Nijmegen - Arnhem Centraal, Oss - Nijmegen, Nijmegen - Arnhem Centraal, Arnhem Centraal - Dieren, Zutphen - Dieren, Deventer - Zutphen, Apeldoorn - Zutphen, Deventer - Zutphen
+11 Haarlem - Beverwijk, Amsterdam Sloterdijk - Haarlem, Amsterdam Sloterdijk - Zaandam, Amsterdam Centraal - Amsterdam Sloterdijk, Amsterdam Centraal - Almere Centrum, Amsterdam Amstel - Almere Centrum, Almere Centrum - Lelystad Centrum, Almere Centrum - Lelystad Centrum, Amsterdam Centraal - Almere Centrum, Amsterdam Amstel - Amsterdam Centraal, Utrecht Centraal - Amsterdam Amstel
+12 Eindhoven - Helmond, Helmond - Venlo, Eindhoven - Helmond, Eindhoven - s-Hertogenbosch, Eindhoven - Tilburg, Weert - Eindhoven, Roermond - Weert, Sittard - Roermond, Sittard - Heerlen, Maastricht - Sittard
+Its total length is 1967 minutes
+Its score is 6046
