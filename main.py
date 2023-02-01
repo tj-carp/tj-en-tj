@@ -1,5 +1,5 @@
 from code.classes.graph import Graph
-from code.algorithms import randomise, greedy, hillclimber, reserve2
+from code.algorithms import randomise, greedy, hillclimber
 from sys import argv
 
 if __name__ == "__main__":
@@ -13,8 +13,8 @@ if __name__ == "__main__":
     map_choice = input("Type here: ")
 
     while map_choice not in ['1', '2']:
-            print("You have given invalid input. Please choose either '1' or '2'")
-            map_choice = input("Type here: ")
+        print("You have given invalid input. Please choose either '1' or '2'")
+        map_choice = input("Type here: ")
 
     # choose input map name and use to load data
     if map_choice == '1':
@@ -29,8 +29,8 @@ if __name__ == "__main__":
     connections = Graph(stations_file, connections_file).connections
 
     # request valid input to determine which algorithm to run
-    print("\nWhich algorithm do you want to run?\n1 Randomise\n2 Greedy\n3 Hillclimber\n4 Run all algorithms \n"\
-        "Please note that if you chose The Netherlands, options 3 and 4 will take at least 3 hours to run ")
+    print("\nWhich algorithm do you want to run?\n1 Randomise\n2 Greedy\n3 Hillclimber\n4 Run all algorithms \n"
+          "Please note that if you chose The Netherlands, options 3 and 4 will take at least 3 hours to run ")
     alg_choice = input("Type here: ")
 
     while alg_choice not in ['1', '2', '3', '4']:
@@ -40,8 +40,8 @@ if __name__ == "__main__":
     # --------------------------- Randomise ------------------------------------
     if alg_choice == '1' or alg_choice == '4':
         # request input for tries
-        print("\nHow many times iterations do you want randomise to run?\nPlease note that fewer than 1000 tries may give subpar results "\
-        "and more than 100.000 tries may take a while or forever")
+        print("\nHow many times iterations do you want randomise to run?\nPlease note that fewer than 1000 tries may give subpar results "
+              "and more than 100.000 tries may take a while or forever")
         tries = input("Type here: ")
 
         # ensure valid input
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         randomise = randomise.Randomise(connections, tries)
 
         print(f"Running randomise {tries} times...")
-        
+
         randomise.run()
     # --------------------------- Greedy ---------------------------------------
     if alg_choice == '2' or alg_choice == '4':
@@ -70,8 +70,8 @@ if __name__ == "__main__":
             start_choice = input("Type here: ")
 
         # request input for tries
-        print("\nHow many times iterations do you want hillclimber to run?\nPlease note that fewer than 10 tries may give subpar results "\
-        "and more than 10.000 tries may take a while or forever")
+        print("\nHow many times iterations do you want hillclimber to run?\nPlease note that fewer than 10 tries may give subpar results "
+              "and more than 10.000 tries may take a while or forever")
         tries = input("Type here: ")
 
         # ensure valid input
@@ -82,6 +82,5 @@ if __name__ == "__main__":
 
         hillclimber = hillclimber.HillClimber(connections, start_choice, tries)
         print(f"Running hillclimber {tries} times...")
-        
+
         hillclimber.run()
-    

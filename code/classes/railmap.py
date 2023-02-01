@@ -1,7 +1,7 @@
 from code.classes.route import Route
 
+
 class RailMap:
-    
     def __init__(self, connections):
         self.connections = connections
         self.routes = []
@@ -29,19 +29,18 @@ class RailMap:
         T = len(self.routes)
         Min = self.minutes
         K = p * 10000 - (T * 100 + Min)
-        
-        return int(K)
 
+        return int(K)
 
     def __repr__(self):
         """
         make sure that the object is printed properly
         """
         rep = "Railmap: "
-        
+
         for id, route in enumerate(self.routes, 1):
             rep += f"\n{id} {route}"
-            
+
         rep += f"\nIts total length is {self.minutes} minutes"
         rep += f"\nIts score is {self.score()}"
 

@@ -4,6 +4,7 @@ from code.visualisation.visualisation import run_visualise
 import random
 from tqdm import tqdm
 
+
 class HillClimber:
     """
     HillClimber class in which a new random route is created for i iterations and
@@ -11,6 +12,7 @@ class HillClimber:
     and the next iteration will be executed according to the improved railmap or remain
     the same if no improvements on score are made
     """
+
     def __init__(self, connections, start_choice, tries):
         self.connections = connections
         self.connection_ids = [*range(1, len(self.connections) + 1)]
@@ -34,10 +36,11 @@ class HillClimber:
         if self.start == '1':
             random_railmap = random_railmap.create_railmap()
         else:
-            random_railmap = random_railmap.create_best_railmap()       
+            random_railmap = random_railmap.create_best_railmap()
 
         # if there are any unused connections collect them in a list
-        unused_ids = list(set(self.connection_ids) - set(random_railmap.visited))
+        unused_ids = list(set(self.connection_ids) -
+                          set(random_railmap.visited))
 
         # begin all values with (the score of) the railmap just created
         self.first_score = random_railmap.score()
@@ -53,17 +56,18 @@ class HillClimber:
 
             while new_route.length < random.randint(self.min_length, new_route.max_length):
                 try:
-                    random_connection = random.choice(unused_ids)            
+                    random_connection = random.choice(unused_ids)
                     new_route.add_connection(random_connection)
                     unused_ids.remove(random_connection)
                 except:
-                    random_connection = random.choice(self.connection_ids)            
+                    random_connection = random.choice(self.connection_ids)
                     new_route.add_connection(random_connection)
 
             # check each existing route to see if swapping for new route gives score gain
             for j, route in enumerate(new_railmap.routes):
                 new_railmap.minutes -= route.length
-                new_railmap.visited = list(set(new_railmap.visited) - set(route.ids))
+                new_railmap.visited = list(
+                    set(new_railmap.visited) - set(route.ids))
                 new_railmap.routes[j] = new_route
                 new_railmap.minutes += new_route.length
                 new_railmap.visited += new_route.ids
@@ -80,7 +84,7 @@ class HillClimber:
                     new_railmap = deepcopy(better_railmap)
                 else:
                     new_railmap = deepcopy(random_railmap)
-            
+
             # save previous iteration's result in case improved
             better_railmap = deepcopy(best_railmap)
 
@@ -92,10 +96,11 @@ class HillClimber:
         """
         railmap = self.create_railmap()
         result = f"\nAmount of runs: {self.tries} \n----------------------------------------------------------------\n"\
-        f"initial score: {self.first_score}, end score: {self.best_score}\n"\
-        f"----------------------------------------------------------------\n\n"\
-        f"{railmap}"
+            f"initial score: {self.first_score}, end score: {self.best_score}\n"\
+            f"----------------------------------------------------------------\n\n"\
+            f"{railmap}"
 
         print(result)
 
-        run_visualise(railmap, self.connections, "hillclimber", self.scores, self.tries, result)
+        run_visualise(railmap, self.connections, "hillclimber",
+                      self.scores, self.tries, result)

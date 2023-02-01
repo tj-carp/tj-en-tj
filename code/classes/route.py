@@ -36,7 +36,6 @@ class Route:
         self.length += connection.distance
         self.ids.append(connection_id)
         self.current_connection = connection
-        
 
     def __repr__(self):
         """
@@ -45,7 +44,7 @@ class Route:
         rep = ''
         for i, connection in enumerate(self.route):
             if i == (len(self.route) - 1):
-                rep += f"{connection}"     
+                rep += f"{connection}"
             else:
                 rep += f"{connection}, "
 

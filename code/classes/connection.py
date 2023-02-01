@@ -17,11 +17,8 @@ class Connection:
             return True
         if connection.station2.name == self.station2.name:
             return True
-        
-        return False
 
-    def set_visited(self):
-        self.visited = True
+        return False
 
     def __repr__(self):
         """
