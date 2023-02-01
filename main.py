@@ -85,10 +85,4 @@ if __name__ == "__main__":
         print(f"Running hillclimber {tries} times...")
         
         hillclimber.run()
-
-        # ----------------------- comparitive visualisation --------------------------
-
-    if alg_choice == '4':
-        print("hello world")
-        omega_vis(algorithms, scores1, scores2, scores3)
     
